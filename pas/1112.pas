@@ -1,0 +1,17 @@
+const
+fi='tong.inp';
+fo='tong.out';
+var
+        a,b,s:longint;
+        f:text;
+begin
+        assign(f,fi);
+        reset(f);
+        readln(f,a,b);
+        close(f);
+        s:=a+b;
+        assign(f,fo);
+        rewrite(f);
+        write(f,s);
+        close(f);
+end.
