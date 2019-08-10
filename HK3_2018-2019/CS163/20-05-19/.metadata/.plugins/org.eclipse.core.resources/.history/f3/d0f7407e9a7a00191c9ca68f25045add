@@ -1,0 +1,25 @@
+/*
+ * main.cpp
+ *
+ *  Created on: May 20, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+using namespace std;
+struct Node{
+	int val;
+	Node *Left,*Right;
+};
+int main(){
+	Node *root;
+	root=new Node;
+	int n;
+	cin>>n;
+	if (n==0) return;
+	root->val=n;
+	root->Left=root->Right=NULL;
+
+}
+
+

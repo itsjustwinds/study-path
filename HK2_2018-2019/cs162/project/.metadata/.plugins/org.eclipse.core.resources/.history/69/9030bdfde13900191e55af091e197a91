@@ -1,0 +1,17 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#include<iostream>
+#include"login.h"
+#include"linuxF.h"
+using namespace std;
+int main(){
+	login Login;
+	Login.screen();
+	return 0;
+}
+
+

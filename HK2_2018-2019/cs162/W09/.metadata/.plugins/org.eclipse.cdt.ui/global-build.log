@@ -1,0 +1,273 @@
+08:26:34 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: Cross G++ Linker
+g++  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:32:41 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:33:47: warning: too many arguments for format [-Wformat-extra-args]
+  printf("There are \n number in the array",dem);
+                                               ^
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: Cross G++ Linker
+g++  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:33:05 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:33:47: warning: too many arguments for format [-Wformat-extra-args]
+  printf("There are \n number in the array",dem);
+                                               ^
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: Cross G++ Linker
+g++  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:33:57 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: Cross G++ Linker
+g++  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:34:06 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+08:34:42 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: Cross G++ Linker
+g++  -o "test"  ./main.o   
+Finished building target: test
+ 
+08:34:44 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+08:36:14 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+08:43:45 **** Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test2
+Invoking: Cross G++ Linker
+g++  -o "test2"  ./main.o   
+Finished building target: test2
+ 
+09:13:30 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:27: error: ISO C++ forbids taking the address of a bound member function to form a pointer to member function.  Say ‘&book::get_ID’ [-fpermissive]
+   fout.write((char*)&a[i].get_ID,sizeof(int));
+                           ^~~~~~
+../main.cpp:58:27: error: invalid cast from type ‘int (book::*)()’ to type ‘char*’
+../main.cpp:59:27: error: ISO C++ forbids taking the address of a bound member function to form a pointer to member function.  Say ‘&book::get_title’ [-fpermissive]
+   fout.write((char*)&a[i].get_title,strlen(a[i].get_title()));
+                           ^~~~~~~~~
+../main.cpp:59:27: error: invalid cast from type ‘char* (book::*)()’ to type ‘char*’
+../main.cpp:60:27: error: ISO C++ forbids taking the address of a bound member function to form a pointer to member function.  Say ‘&book::get_authors’ [-fpermissive]
+   fout.write((char*)&a[i].get_authors,strlen(a[i].get_authors()));
+                           ^~~~~~~~~~~
+../main.cpp:60:27: error: invalid cast from type ‘char* (book::*)()’ to type ‘char*’
+../main.cpp:61:37: error: lvalue required as unary ‘&’ operand
+   fout.write((char*)&a[i].get_price(),sizeof(float));
+                                     ^
+../main.cpp:62:37: error: lvalue required as unary ‘&’ operand
+   fout.write((char*)&a[i].get_stock(),sizeof(int));
+                                     ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:00 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:26: error: invalid use of member function ‘int book::get_ID()’ (did you forget the ‘()’ ?)
+   fout.write((char*)a[i].get_ID,sizeof(int));
+                     ~~~~~^~~~~~
+../main.cpp:59:26: error: invalid use of member function ‘char* book::get_title()’ (did you forget the ‘()’ ?)
+   fout.write((char*)a[i].get_title,strlen(a[i].get_title()));
+                     ~~~~~^~~~~~~~~
+../main.cpp:60:26: error: invalid use of member function ‘char* book::get_authors()’ (did you forget the ‘()’ ?)
+   fout.write((char*)a[i].get_authors,strlen(a[i].get_authors()));
+                     ~~~~~^~~~~~~~~~~
+../main.cpp:61:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:62:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_stock(),sizeof(int));
+                                    ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:16 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_ID(),sizeof(int));
+                                 ^
+../main.cpp:61:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:62:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_stock(),sizeof(int));
+                                    ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:42 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_ID(),4);
+                                 ^
+../main.cpp:61:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:62:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_stock(),4);
+                                    ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:55 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:34: error: lvalue required as unary ‘&’ operand
+   fout.write((char*)&a[i].get_ID(),4);
+                                  ^
+../main.cpp:61:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:62:37: error: lvalue required as unary ‘&’ operand
+   fout.write((char*)&a[i].get_stock(),4);
+                                     ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:15:03 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:58:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_ID(),4);
+                                 ^
+../main.cpp:61:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:62:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_stock(),4);
+                                    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:15:32 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:62:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+../main.cpp:63:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   fout.write((char*)a[i].get_stock(),4);
+                                    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:12 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void write_to_file(int&, book*)’:
+../main.cpp:62:36: error: invalid cast from type ‘float’ to type ‘char*’
+   fout.write((char*)a[i].get_price(),sizeof(float));
+                                    ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:50 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:72:19: warning: ‘a’ is used uninitialized in this function [-Wuninitialized]
+  read_from_console(n,a);
+  ~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../main.cpp
+ 
+Building target: test2
+Invoking: Cross G++ Linker
+g++  -o "test2"  ./main.o   
+Finished building target: test2
+ 
+09:17:08 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test2
+Invoking: Cross G++ Linker
+g++  -o "test2"  ./main.o   
+Finished building target: test2
+ 
+09:17:17 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:17:31 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for 'all'.

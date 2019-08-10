@@ -1,0 +1,24 @@
+/*
+ * 18125130_Ex03.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+
+
+#include"Oxy_function.h"
+int main(){
+	point a[100];
+	int n;
+	bool responding=loadArray("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex03/input.txt",a,n);
+	if (!responding){
+		cout<<"can not load data\n";
+		return 0;
+	}
+	int ans;
+	sortAsc(a,n);
+	ans = saveFile("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex03/res.txt",a,n);
+	if (ans)cout<<"Find res and save successully\n";
+	return 0;
+}
+

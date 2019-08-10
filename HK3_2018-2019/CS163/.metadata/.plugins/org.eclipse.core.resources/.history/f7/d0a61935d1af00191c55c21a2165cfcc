@@ -1,0 +1,46 @@
+/*
+ * system.h
+ *
+ *  Created on: Jul 27, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef SYSTEM_H_
+#define SYSTEM_H_
+#include<iostream>
+#include<string>
+#include<vector>
+#include<map>
+#include"trie.h"
+using namespace std;
+class system{
+private:
+	trie* root;
+	map<string,int> stopwords;
+
+public:
+	system(){
+		root=new trie();
+		stopwords.clear();
+	}
+
+	void load_stop_word();
+	void build_trie();
+	void process_AND();
+	void process_OR();
+	void process_minus();
+	void process_intitle();
+	void process_plus();
+	void process_type();
+	void process_a_price();
+	void process_hashtag();
+	void process_exact_match();
+	void process_unknown_word();
+	void process_range_number();
+	void process_synonyms();
+
+};
+
+
+
+#endif /* SYSTEM_H_ */

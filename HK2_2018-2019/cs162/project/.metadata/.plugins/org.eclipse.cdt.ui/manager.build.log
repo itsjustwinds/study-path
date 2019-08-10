@@ -1,0 +1,20 @@
+17:18:12 **** Incremental Build of configuration Debug for project manager ****
+make all 
+Building file: ../login.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"login.d" -MT"login.o" -o "login.o" "../login.cpp"
+Finished building: ../login.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: manager
+Invoking: Cross G++ Linker
+g++  -o "manager"  ./function_linux.o ./login.o ./main.o   
+Finished building target: manager
+ 
+
+17:18:12 Build Finished. 0 errors, 0 warnings. (took 766ms)
+

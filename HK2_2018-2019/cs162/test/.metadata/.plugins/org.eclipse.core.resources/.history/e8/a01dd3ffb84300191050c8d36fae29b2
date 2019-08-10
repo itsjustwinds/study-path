@@ -1,0 +1,14 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+struct Node{
+	int val;
+	Node *Next;
+};
+void input(Node *&root);
+void display(Node *&root);
+void delete_all(Node *&root);
+void reverse(Node *&root);
+int main(){
+
+}

@@ -1,0 +1,19 @@
+/*
+ * trie.h
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef TRIE_H_
+#define TRIE_H_
+#include<iostream>
+#include<string>
+struct trie{
+	vector<char >
+};
+
+
+
+
+#endif /* TRIE_H_ */

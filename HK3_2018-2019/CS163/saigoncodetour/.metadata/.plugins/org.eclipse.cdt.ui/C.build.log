@@ -1,0 +1,69 @@
+20:55:07 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:75:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0;i<res.size();++i){
+                  ~^~~~~~~~~~~
+../main.cpp:79:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=i;j<res.size();++j)
+                    ~^~~~~~~~~~~
+../main.cpp:93:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+
+20:55:08 Build Finished. 0 errors, 17 warnings. (took 620ms)
+

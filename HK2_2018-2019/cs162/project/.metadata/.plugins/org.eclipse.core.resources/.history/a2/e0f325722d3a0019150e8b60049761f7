@@ -1,0 +1,31 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#include<iostream>
+#include"login.h"
+#include"linuxF.h"
+using namespace std;
+int main(){
+	//login Login;
+	//Login.screen();
+	linuxF LinuxF;
+	initscr();
+	do{
+		LinuxF.gotoXY(1,1);
+		printf("write a ch :");
+		LinuxF.key=LinuxF.inputkey();
+		LinuxF.gotoXY(5,10);
+		if (LinuxF.key!=-1){
+			if (LinuxF.key=='w') printf("you just write w\n");
+			if (LinuxF.key=='s') printf("you just write s\n");
+		}
+		refresh();
+	}while(LinuxF.key!=27);
+	endwin();
+	return 0;
+}
+
+

@@ -1,0 +1,23 @@
+15:13:34 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&)’:
+../18125130_Ex02_2.cpp:20:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<arr.size();++i)
+                ~^~~~~~~~~~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:39:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+Finished building: ../18125130_Ex02_2.cpp
+ 
+Building target: Ex02_2
+Invoking: Cross G++ Linker
+g++  -o "Ex02_2"  ./18125130_Ex02_2.o   
+Finished building target: Ex02_2
+ 
+
+15:13:35 Build Finished. 0 errors, 2 warnings. (took 574ms)
+

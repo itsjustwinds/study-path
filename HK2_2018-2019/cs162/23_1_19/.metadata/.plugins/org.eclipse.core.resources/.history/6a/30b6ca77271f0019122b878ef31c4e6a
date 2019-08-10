@@ -1,0 +1,24 @@
+/*
+ * 18125130_Ex03.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+
+
+#include"Oxy_function.h"
+int main(){
+	Fraction a[100];
+	int n;
+	bool responding=loadArray("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex01/input.txt",a,n);
+	if (!responding){
+		cout<<"can not load data\n";
+		return 0;
+	}
+	Fraction res=max(a,n);
+	int ans;
+	ans = saveAFraction("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex01/max.txt", res);
+	if (ans)cout<<"Find max and save successully\n";
+	return 0;
+}
+

@@ -1,0 +1,29 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+void init_array(int n){
+	int *a=new int[n];
+	for (int i=0;i<n;++i)
+		cin>>a[i];
+	cout<<"\n";
+	output_array(0,n,a);
+	output_reversed_array(0,n,a);
+	delete[] a;
+}
+
+void output_array(int now,int n,int *&a){
+	if (now==n) return;
+	cout<<a[now]<<" ";
+	output_array(now+1,n,a);
+}
+
+void output_reversed_array(int now,int n,int *&a){
+	if (now==0) return;
+	output_reversed_array(now+1,n,a);
+	cout<<a[now]<<" ";
+}

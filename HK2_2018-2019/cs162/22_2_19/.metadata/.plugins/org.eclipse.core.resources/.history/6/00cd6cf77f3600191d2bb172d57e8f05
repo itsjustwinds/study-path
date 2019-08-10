@@ -1,0 +1,15 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 22, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+int main(){
+	int a=10,b=100;
+	cout<<dosomething(a,b);
+	return 0;
+}
+
+

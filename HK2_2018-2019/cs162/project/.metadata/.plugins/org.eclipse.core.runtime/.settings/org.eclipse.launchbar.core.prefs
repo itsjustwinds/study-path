@@ -1,0 +1,11 @@
+LaunchTargetManager/configs/SMS=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/manager=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:manager,org.eclipse.launchbar.core.descriptorType.default\:SMS
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:SMS/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SMS/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:manager/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:manager/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

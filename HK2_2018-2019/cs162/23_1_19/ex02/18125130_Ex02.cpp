@@ -1,0 +1,21 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+#include"Fraction.h"
+int main(){
+	Fraction a[100];
+	int n;
+	bool responding=loadArray("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex02/input.txt",a,n);
+	if (!responding){
+		cout<<"can not load data\n";
+		return 0;
+	}
+	sortAsc(a,n);
+	int ans;
+	ans = saveAFraction("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex02/res.txt", a, n);
+	if (ans)cout<<"Find res and save successully\n";
+	return 0;
+}

@@ -1,0 +1,35 @@
+/*
+ * main.cpp
+ *
+ *  Created on: May 20, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+using namespace std;
+struct Node{
+	int val;
+	Node *Left,*Right;
+};
+void add_node(Node *&root,int x){
+	if (root==NULL){
+		root=new Node;
+		root->val=x;
+		root->Left=root->Right=NULL;
+		return;
+	}
+	if (x<=root->val) add_node(root->Left,x);
+	else add_node(root->Right,x);
+}
+int main(){
+	Node *root;
+	root=NULL;
+	int n;
+	while(1){
+		cin>>n;
+		if (n==0) break;
+		add_node(root,x);
+	}
+}
+
+

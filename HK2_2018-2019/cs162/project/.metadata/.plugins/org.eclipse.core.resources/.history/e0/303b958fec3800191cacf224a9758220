@@ -1,0 +1,21 @@
+/*
+ * login.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+
+#include"login.h"
+int login::screen(){
+	linuxF LinuxF;
+	while(1){
+		LinuxF.gotoXY(15,5);
+		printf("STUDENT MANAGER SYSTEM\n");
+		LinuxF.gotoXY(20,10);
+		printf("Login");
+		LinuxF.gotoXY(20,11);
+		printf("exit");
+	}
+	return 1;
+}
+

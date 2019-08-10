@@ -1,0 +1,18 @@
+/*
+ * function.h
+ *
+ *  Created on: Jun 11, 2019
+ *      Author: huy
+ */
+
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+
+#include<iostream>
+using namespace std;
+struct TTT{
+	int
+};
+
+
+#endif /* FUNCTION_H_ */

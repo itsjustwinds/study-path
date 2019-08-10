@@ -1,0 +1,39 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 13, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+void dfs(int *&dd,int *&res,int n,int stage){
+	if(stage>n){
+		for (int i=1;i<=n;++i)
+			printf("%d ",res[i]);
+		printf("\n");
+	}
+	for (int i=1;i<=n;++i){
+		if (dd[i]) continue;
+		dd[i]=1;
+		res[stage]=i;
+		dfs(dd,res,n,stage+1);
+		dd[i]=0;
+	}
+}
+int main(){
+	int *dd;
+	int *res;
+	int n;
+	cin>>n;
+	dd=new int[n+1];
+	res=new int[n+1];
+	for (int i=1;i<=n;++i)
+		dd[i]=0;
+	dfs(dd,res,n,1);
+	delete[] dd;
+	delete[] res;
+}
+
+

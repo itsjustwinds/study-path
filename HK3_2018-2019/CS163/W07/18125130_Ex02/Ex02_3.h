@@ -1,0 +1,17 @@
+/*
+ * Ex02_3.h
+ *
+ *  Created on: Jul 10, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef EX02_3_H_
+#define EX02_3_H_
+#include<iostream>
+#include<vector>
+using namespace std;
+void input(int &n, int &begin, int &finish, int** &edge);
+void dfs(int &n,int &now,int &begin,int &finish,int** &edge,vector<int > &res);
+void answer3(int &n,int &begin,int &finish,int** &edge,vector<int > &res);
+
+#endif /* EX02_3_H_ */

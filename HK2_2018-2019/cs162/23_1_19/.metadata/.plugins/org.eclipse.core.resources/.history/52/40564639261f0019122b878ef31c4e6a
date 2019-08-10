@@ -1,0 +1,14 @@
+/*
+ * Oxy_function.h
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef OXY_FUNCTION_H_
+#define OXY_FUNCTION_H_
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+#endif /* OXY_FUNCTION_H_ */

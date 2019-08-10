@@ -1,0 +1,17 @@
+/*
+ * 18125130_Ex02_3.cpp
+ *
+ *  Created on: Jul 17, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+	int n;
+	vector<int> *e;
+
+}
+
+

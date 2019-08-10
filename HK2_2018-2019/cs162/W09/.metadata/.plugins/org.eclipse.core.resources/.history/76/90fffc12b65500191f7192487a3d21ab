@@ -1,0 +1,45 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Apr 3, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+#include<fstream>
+#include<cstring>
+#include<stdio.h>
+using namespace std;
+class book{
+private:
+	int ID;
+	char* title;
+	char* authors;
+	float price;
+	int stock;
+public:
+	void update_ID(int new_ID){ID=new_ID;}
+	void update_title(char* new_s){title=new_s;}
+	void update_authors(char* new_s){authors=new_s;}
+	void update_price(float new_price){price=new_price;}
+	void update_stock(int new_stock){stock=new_stock;}
+	int get_ID(){return ID;}
+	char* get_title(){return title;}
+	char* get_authors(){return authors;}
+	float get_price(){return price;}
+	int get_stock(){return stock;}
+};
+void write_to_file(int n,book* a){
+	ofstream fout;
+	fout.open("data.bin",ios::binary);
+	fout.write((char*)&n,sizeof(int));
+	for (int i=0;i<n;++i){
+		int len=strlen(book[i].get_title())''
+		fout.write(&title,);
+	}
+}
+int main(){
+
+}
+
+

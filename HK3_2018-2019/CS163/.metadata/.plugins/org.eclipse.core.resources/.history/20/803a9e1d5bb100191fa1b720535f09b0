@@ -1,0 +1,15 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+#include"System.h"
+int main(){
+	System SYSTEM;
+
+	return 0;
+}
+
+
+

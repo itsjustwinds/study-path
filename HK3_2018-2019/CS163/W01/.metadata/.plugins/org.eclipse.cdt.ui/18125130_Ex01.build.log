@@ -1,0 +1,34 @@
+22:31:29 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:31:29 Build Failed. 4 errors, 0 warnings. (took 668ms)
+

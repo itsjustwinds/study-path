@@ -1,0 +1,14 @@
+/*
+ * 18125130_Ex02_1.cpp
+ *
+ *  Created on: Jul 17, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+
+

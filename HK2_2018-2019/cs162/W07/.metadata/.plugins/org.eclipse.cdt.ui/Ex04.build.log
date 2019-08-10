@@ -1,0 +1,15 @@
+23:05:27 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../18125130_Ex04.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex04.d" -MT"18125130_Ex04.o" -o "18125130_Ex04.o" "../18125130_Ex04.cpp"
+Finished building: ../18125130_Ex04.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./18125130_Ex04.o ./function.o   
+Finished building target: Ex04
+ 
+
+23:05:27 Build Finished. 0 errors, 0 warnings. (took 468ms)
+

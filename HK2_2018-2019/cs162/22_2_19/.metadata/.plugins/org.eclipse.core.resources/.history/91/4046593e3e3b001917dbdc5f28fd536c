@@ -1,0 +1,17 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+int main(){
+	int n;
+	pNode *root;
+	input(n,root);
+	display(n,root);
+	delete_pointer(root);
+	return 0;
+}
+

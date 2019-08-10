@@ -1,0 +1,20 @@
+/*
+ * linuxF.h
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef LINUXF_H_
+#define LINUXF_H_
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct linuxF{
+	int curX,curY;
+	void gotoXY(int x,int y);
+	void clrscr();
+};
+
+
+#endif /* LINUXF_H_ */

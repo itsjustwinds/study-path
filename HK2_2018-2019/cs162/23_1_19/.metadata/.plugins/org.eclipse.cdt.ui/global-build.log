@@ -1,0 +1,942 @@
+22:27:25 **** Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fraction.d" -MT"fraction.o" -o "fraction.o" "../fraction.cpp"
+../fraction.cpp:7:9: fatal error: Fraction.h: No such file or directory
+subdir.mk:21: recipe for target 'fraction.o' failed
+ #include"Fraction.h"
+         ^~~~~~~~~~~~
+compilation terminated.
+make: *** [fraction.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:30:58 **** Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+Finished building: ../Fraction.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ex01
+Invoking: Cross G++ Linker
+g++  -o "ex01"  ./Fraction.o ./main.o   
+Finished building target: ex01
+ 
+22:34:36 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ex01
+Invoking: Cross G++ Linker
+g++  -o "ex01"  ./Fraction.o ./main.o   
+Finished building target: ex01
+ 
+22:35:00 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:43 **** Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+Finished building: ../Fraction.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./Fraction.o ./main.o   
+Finished building target: ex02
+ 
+22:37:49 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+22:39:50 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./Fraction.o ./main.o   
+Finished building target: ex02
+ 
+22:40:09 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:09 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+22:58:32 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: *** No rule to make target '../main.cpp', needed by 'main.o'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+22:58:32 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./Fraction.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'ex02' failed
+collect2: error: ld returned 1 exit status
+make: *** [ex02] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:58:32 **** Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../18125130_Ex03.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex03.d" -MT"18125130_Ex03.o" -o "18125130_Ex03.o" "../18125130_Ex03.cpp"
+Finished building: ../18125130_Ex03.cpp
+ 
+Building file: ../Oxy_function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Oxy_function.d" -MT"Oxy_function.o" -o "Oxy_function.o" "../Oxy_function.cpp"
+Finished building: ../Oxy_function.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+22:59:06 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:18 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../18125130_Ex01.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex01.d" -MT"18125130_Ex01.o" -o "18125130_Ex01.o" "../18125130_Ex01.cpp"
+Finished building: ../18125130_Ex01.cpp
+ 
+Building target: ex01
+Invoking: Cross G++ Linker
+g++  -o "ex01"  ./18125130_Ex01.o ./Fraction.o   
+Finished building target: ex01
+ 
+23:00:18 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./18125130_Ex02.o ./Fraction.o   
+Finished building target: ex02
+ 
+23:00:19 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../18125130_Ex03.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex03.d" -MT"18125130_Ex03.o" -o "18125130_Ex03.o" "../18125130_Ex03.cpp"
+Finished building: ../18125130_Ex03.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+23:00:20 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:43 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../18125130_Ex03.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex03.d" -MT"18125130_Ex03.o" -o "18125130_Ex03.o" "../18125130_Ex03.cpp"
+Finished building: ../18125130_Ex03.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+23:01:12 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:20 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:00 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../18125130_Ex01.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex01.d" -MT"18125130_Ex01.o" -o "18125130_Ex01.o" "../18125130_Ex01.cpp"
+Finished building: ../18125130_Ex01.cpp
+ 
+Building target: ex01
+Invoking: Cross G++ Linker
+g++  -o "ex01"  ./18125130_Ex01.o ./Fraction.o   
+Finished building target: ex01
+ 
+23:30:49 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:30:50 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:30:50 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:30:50 **** Build of configuration Debug for project ex04 ****
+make all 
+Building file: ../18125130_Ex04.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex04.d" -MT"18125130_Ex04.o" -o "18125130_Ex04.o" "../18125130_Ex04.cpp"
+Finished building: ../18125130_Ex04.cpp
+ 
+Building file: ../Circle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Circle.d" -MT"Circle.o" -o "Circle.o" "../Circle.cpp"
+Finished building: ../Circle.cpp
+ 
+Building target: ex04
+Invoking: Cross G++ Linker
+g++  -o "ex04"  ./18125130_Ex04.o ./Circle.o   
+Finished building target: ex04
+ 
+23:30:56 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:27 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:27 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:27 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:27 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+Building file: ../18125130_Ex04.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex04.d" -MT"18125130_Ex04.o" -o "18125130_Ex04.o" "../18125130_Ex04.cpp"
+Finished building: ../18125130_Ex04.cpp
+ 
+Building target: ex04
+Invoking: Cross G++ Linker
+g++  -o "ex04"  ./18125130_Ex04.o ./Circle.o   
+Finished building target: ex04
+ 
+23:31:29 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:08 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:11 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:40 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:45 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:49 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:52 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+09:13:56 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+../Fraction.cpp: In function ‘Fraction max(Fraction*, int)’:
+../Fraction.cpp:32:11: error: no match for ‘operator>’ (operand types are ‘Fraction’ and ‘Fraction’)
+   if (a[i]>tmp) {
+       ~~~~^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/stl_pair.h:462:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:462:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::pair<_T1, _T2>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note: candidate: template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator>(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator>(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator>(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note: candidate: template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator>(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::move_iterator<_IteratorL>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6123:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6123:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6136:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6136:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   ‘Fraction’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (a[i]>tmp) {
+            ^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../Fraction.h:10,
+                 from ../Fraction.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6148:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6148:5: note:   template argument deduction/substitution failed:
+../Fraction.cpp:32:12: note:   mismatched types ‘const _CharT*’ and ‘Fraction’
+   if (a[i]>tmp) {
+            ^~~
+subdir.mk:21: recipe for target 'Fraction.o' failed
+make: *** [Fraction.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:35 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+../Fraction.cpp: In function ‘bool compare(Fraction, Fraction)’:
+../Fraction.cpp:23:6: error: ambiguating new declaration of ‘bool compare(Fraction, Fraction)’
+ bool compare (Fraction p1, Fraction p2){
+      ^~~~~~~
+In file included from ../Fraction.cpp:7:0:
+../Fraction.h:20:5: note: old declaration ‘int compare(Fraction, Fraction)’
+ int compare(Fraction p1, Fraction p2);
+     ^~~~~~~
+subdir.mk:21: recipe for target 'Fraction.o' failed
+make: *** [Fraction.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:21:55 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+Building file: ../18125130_Ex01.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex01.d" -MT"18125130_Ex01.o" -o "18125130_Ex01.o" "../18125130_Ex01.cpp"
+Finished building: ../18125130_Ex01.cpp
+ 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+Finished building: ../Fraction.cpp
+ 
+Building target: ex01
+Invoking: Cross G++ Linker
+g++  -o "ex01"  ./18125130_Ex01.o ./Fraction.o   
+Finished building target: ex01
+ 
+09:21:56 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+../Fraction.cpp: In function ‘bool compare(Fraction, Fraction)’:
+../Fraction.cpp:23:6: error: ambiguating new declaration of ‘bool compare(Fraction, Fraction)’
+ bool compare (Fraction p1, Fraction p2){
+      ^~~~~~~
+In file included from ../Fraction.cpp:7:0:
+../Fraction.h:19:5: note: old declaration ‘int compare(Fraction, Fraction)’
+ int compare(Fraction p1, Fraction p2);
+     ^~~~~~~
+subdir.mk:21: recipe for target 'Fraction.o' failed
+make: *** [Fraction.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:21:57 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:57 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project ex05 ****
+
+Nothing to build for project ex05
+09:22:18 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+09:22:21 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+09:22:24 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+09:22:59 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+Finished building: ../Fraction.cpp
+ 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./18125130_Ex02.o ./Fraction.o   
+Finished building target: ex02
+ 
+09:23:04 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:41 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:41 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+Building file: ../18125130_ex05.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_ex05.d" -MT"18125130_ex05.o" -o "18125130_ex05.o" "../18125130_ex05.cpp"
+Finished building: ../18125130_ex05.cpp
+ 
+Building file: ../Date.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+../Date.cpp:8:9: fatal error: Date.h: No such file or directory
+subdir.mk:21: recipe for target 'Date.o' failed
+ #include<Date.h>
+         ^~~~~~~~
+compilation terminated.
+make: *** [Date.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:39:49 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+Building file: ../Date.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+../Date.cpp:8:9: fatal error: Date.h: No such file or directory
+ #include<Date.h>
+subdir.mk:21: recipe for target 'Date.o' failed
+         ^~~~~~~~
+compilation terminated.
+make: *** [Date.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:40:08 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+Building file: ../Date.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building target: ex05
+Invoking: Cross G++ Linker
+g++  -o "ex05"  ./18125130_ex05.o ./Date.o   
+Finished building target: ex05
+ 
+09:41:11 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+09:41:26 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+Building file: ../18125130_ex05.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_ex05.d" -MT"18125130_ex05.o" -o "18125130_ex05.o" "../18125130_ex05.cpp"
+Finished building: ../18125130_ex05.cpp
+ 
+Building target: ex05
+Invoking: Cross G++ Linker
+g++  -o "ex05"  ./18125130_ex05.o ./Date.o   
+Finished building target: ex05
+ 
+09:43:23 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../18125130_Ex03.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex03.d" -MT"18125130_Ex03.o" -o "18125130_Ex03.o" "../18125130_Ex03.cpp"
+Finished building: ../18125130_Ex03.cpp
+ 
+Building file: ../Oxy_function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Oxy_function.d" -MT"Oxy_function.o" -o "Oxy_function.o" "../Oxy_function.cpp"
+Finished building: ../Oxy_function.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+09:43:27 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:30 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+Building file: ../18125130_Ex05.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex05.d" -MT"18125130_Ex05.o" -o "18125130_Ex05.o" "../18125130_Ex05.cpp"
+Finished building: ../18125130_Ex05.cpp
+ 
+Building target: ex05
+Invoking: Cross G++ Linker
+g++  -o "ex05"  ./18125130_Ex05.o ./Date.o   
+Finished building target: ex05
+ 
+10:49:40 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:43 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:44 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:49 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+11:09:51 **** Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building file: ../Book.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Book.d" -MT"Book.o" -o "Book.o" "../Book.cpp"
+Finished building: ../Book.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'ex06' failed
+collect2: error: ld returned 1 exit status
+make: *** [ex06] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:09:54 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'ex06' failed
+collect2: error: ld returned 1 exit status
+make: *** [ex06] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:12:12 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+./18125130_Ex06.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex06/Debug/../18125130_Ex06.cpp:13: undefined reference to `load_file(char const*, book*, int&)'
+makefile:44: recipe for target 'ex06' failed
+/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex06/Debug/../18125130_Ex06.cpp:19: undefined reference to `save_file(char const*, long long)'
+collect2: error: ld returned 1 exit status
+make: *** [ex06] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:15:00 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building file: ../Book.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Book.d" -MT"Book.o" -o "Book.o" "../Book.cpp"
+Finished building: ../Book.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+11:16:24 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+11:20:44 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building file: ../Book.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Book.d" -MT"Book.o" -o "Book.o" "../Book.cpp"
+Finished building: ../Book.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+11:20:56 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int main()’:
+../18125130_Ex06.cpp:18:5: warning: unused variable ‘res’ [-Wunused-variable]
+  ll res=get_res(a,n);
+     ^~~
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+11:21:38 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building file: ../Book.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Book.d" -MT"Book.o" -o "Book.o" "../Book.cpp"
+Finished building: ../Book.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+11:21:41 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+11:56:55 **** Build of configuration Debug for project ex07 ****
+make all 
+Building file: ../18125130_Ex07.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex07.d" -MT"18125130_Ex07.o" -o "18125130_Ex07.o" "../18125130_Ex07.cpp"
+Finished building: ../18125130_Ex07.cpp
+ 
+Building file: ../Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Student.d" -MT"Student.o" -o "Student.o" "../Student.cpp"
+../Student.cpp: In function ‘bool load_data(const char*, student*, int&)’:
+../Student.cpp:16:17: error: use of deleted function ‘std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’
+   input(fin,a[i]);
+                 ^
+In file included from ../Student.h:12:0,
+                 from ../Student.cpp:8:
+/usr/include/c++/7/fstream:519:7: note: declared here
+       basic_ifstream(const basic_ifstream&) = delete;
+       ^~~~~~~~~~~~~~
+In file included from ../Student.cpp:8:0:
+../Student.h:20:6: note:   initializing argument 1 of ‘void input(std::ifstream, student&)’
+ void input(ifstream fin, student &a);
+      ^~~~~
+make: *** [Student.o] Error 1
+subdir.mk:21: recipe for target 'Student.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+11:57:43 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+Building file: ../Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Student.d" -MT"Student.o" -o "Student.o" "../Student.cpp"
+../Student.cpp: In function ‘bool load_data(const char*, student*, int&)’:
+../Student.cpp:16:17: error: use of deleted function ‘std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’
+   input(fin,a[i]);
+                 ^
+In file included from ../Student.h:12:0,
+                 from ../Student.cpp:8:
+/usr/include/c++/7/fstream:519:7: note: declared here
+       basic_ifstream(const basic_ifstream&) = delete;
+       ^~~~~~~~~~~~~~
+In file included from ../Student.cpp:8:0:
+../Student.h:20:6: note:   initializing argument 1 of ‘void input(std::ifstream, student&)’
+ void input(ifstream fin, student &a);
+      ^~~~~
+make: *** [Student.o] Error 1
+subdir.mk:21: recipe for target 'Student.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+11:57:54 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+Building file: ../18125130_Ex07.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex07.d" -MT"18125130_Ex07.o" -o "18125130_Ex07.o" "../18125130_Ex07.cpp"
+Finished building: ../18125130_Ex07.cpp
+ 
+Building file: ../Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Student.d" -MT"Student.o" -o "Student.o" "../Student.cpp"
+Finished building: ../Student.cpp
+ 
+Building target: ex07
+Invoking: Cross G++ Linker
+g++  -o "ex07"  ./18125130_Ex07.o ./Student.o   
+Finished building target: ex07
+ 
+11:59:41 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+Building file: ../18125130_Ex07.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex07.d" -MT"18125130_Ex07.o" -o "18125130_Ex07.o" "../18125130_Ex07.cpp"
+Finished building: ../18125130_Ex07.cpp
+ 
+Building file: ../Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Student.d" -MT"Student.o" -o "Student.o" "../Student.cpp"
+Finished building: ../Student.cpp
+ 
+Building target: ex07
+Invoking: Cross G++ Linker
+g++  -o "ex07"  ./18125130_Ex07.o ./Student.o   
+Finished building target: ex07
+ 
+11:59:44 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+12:00:07 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:39 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:54 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:04 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:14 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:26 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:36 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:48 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+20:00:03 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:26 **** Incremental Build of configuration Debug for project ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:31 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:35 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building file: ../Fraction.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Fraction.d" -MT"Fraction.o" -o "Fraction.o" "../Fraction.cpp"
+Finished building: ../Fraction.cpp
+ 
+Building target: ex02
+Invoking: Cross G++ Linker
+g++  -o "ex02"  ./18125130_Ex02.o ./Fraction.o   
+Finished building target: ex02
+ 
+20:06:52 **** Incremental Build of configuration Debug for project ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:07 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../Oxy_function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Oxy_function.d" -MT"Oxy_function.o" -o "Oxy_function.o" "../Oxy_function.cpp"
+Finished building: ../Oxy_function.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+20:10:34 **** Incremental Build of configuration Debug for project ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+20:11:49 **** Incremental Build of configuration Debug for project ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+20:15:24 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int main()’:
+../18125130_Ex06.cpp:21:17: error: too few arguments to function ‘void delete_pointer(book*, int&)’
+  delete_pointer();
+                 ^
+In file included from ../18125130_Ex06.cpp:8:0:
+../Book.h:26:6: note: declared here
+ void delete_pointer(book a[],int &n);
+      ^~~~~~~~~~~~~~
+make: *** [18125130_Ex06.o] Error 1
+subdir.mk:21: recipe for target '18125130_Ex06.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:15:33 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int main()’:
+../18125130_Ex06.cpp:21:17: error: too few arguments to function ‘void delete_pointer(book*, int&)’
+  delete_pointer();
+                 ^
+In file included from ../18125130_Ex06.cpp:8:0:
+../Book.h:26:6: note: declared here
+ void delete_pointer(book a[],int &n);
+      ^~~~~~~~~~~~~~
+make: *** [18125130_Ex06.o] Error 1
+subdir.mk:21: recipe for target '18125130_Ex06.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:15:37 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+Finished building: ../18125130_Ex06.cpp
+ 
+Building file: ../Book.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Book.d" -MT"Book.o" -o "Book.o" "../Book.cpp"
+Finished building: ../Book.cpp
+ 
+Building target: ex06
+Invoking: Cross G++ Linker
+g++  -o "ex06"  ./18125130_Ex06.o ./Book.o   
+Finished building target: ex06
+ 
+20:15:57 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:01 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:12 **** Incremental Build of configuration Debug for project ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:01 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+Building file: ../18125130_Ex07.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex07.d" -MT"18125130_Ex07.o" -o "18125130_Ex07.o" "../18125130_Ex07.cpp"
+Finished building: ../18125130_Ex07.cpp
+ 
+Building file: ../Student.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Student.d" -MT"Student.o" -o "Student.o" "../Student.cpp"
+Finished building: ../Student.cpp
+ 
+Building target: ex07
+Invoking: Cross G++ Linker
+g++  -o "ex07"  ./18125130_Ex07.o ./Student.o   
+Finished building target: ex07
+ 
+20:20:13 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:52 **** Incremental Build of configuration Debug for project ex07 ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,63 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+void init_array(int n){
+	int *a=new int[n];
+	int *dd=new int[n];
+	for (int i=0;i<n;++i)
+		dd[i]=0;
+	for (int i=0;i<n;++i)
+		cin>>a[i];
+	cout<<only_odd(0,n,a);
+	delete[] a;
+	delete[] dd;
+}
+
+void output_array(int now,int n,int *&a){
+	if (now==n) return;
+	cout<<a[now]<<" ";
+	output_array(now+1,n,a);
+}
+
+void output_reversed_array(int now,int n,int *&a){
+	if (now==n) return;
+	output_reversed_array(now+1,n,a);
+	cout<<a[now]<<" ";
+}
+
+int sum(int now,int n,int *&a){
+	if (now==n) return 0;
+	return a[now]+sum(now+1,n,a);
+}
+
+int distinct(int now,int n,int *&a,int *&dd){
+	if (now==n) return 0;
+	if (dd[now]==0) {
+		mark(now,n,a[now],a,dd);
+		return 1+distinct(now+1,n,a,dd);
+	}
+	return distinct(now+1,n,a,dd);
+}
+
+void mark(int now,int n,int val,int *&a,int *&dd){
+	if (now==n) return;
+	if (a[now]==val) dd[now]=1;
+	mark(now+1,n,val,a,dd);
+}
+
+bool only_odd(int now,int n,int *&a){
+	if (now==n) return 1;
+	if (a[now]%2) return 1&&only_odd(now+1,n,a);
+	return 0;
+}
+int Max(int now,int n,int *&a){
+	if (now==n) return -2e9;
+	int x=Max(now+1,n,a);
+	if (x>a[now]) return x;
+	return a[now];
+}

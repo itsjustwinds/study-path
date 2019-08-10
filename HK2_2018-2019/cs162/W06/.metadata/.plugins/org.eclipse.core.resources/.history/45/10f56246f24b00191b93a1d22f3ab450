@@ -1,0 +1,86 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 21, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(ifstream &fin,Node *&root){
+	root=nullptr;
+	int x;
+	fin>>x;
+	if (x==0) return;
+	root=new Node;
+	root->val=x;
+	root->Next=root;
+	Node *cur=root;
+	fin>>x;
+	while(x){
+		cur->Next=new Node;
+		cur=cur->Next;
+		cur->val=x;
+		cur->Next=root;
+		fin>>x;
+	}
+}
+
+void output(ofstream &fout,Node *&cur,Node *&root){
+	if (cur->Next==root){
+		fout<<cur->val<<" 0";
+		return;
+	}
+	fout<<cur->val<<" ";
+	output(fout,cur->Next,root);
+}
+
+void delete_all(Node *&cur,Node *&root){
+	if (cur->Next==root){
+		delete cur;
+		return;
+	}
+	delete_all(cur->Next,root);
+	delete cur;
+}
+
+ int get_min(Node *&root){
+	int min=root->val;
+	Node *cur=root->Next;
+	while(cur!=root){
+		if (min>cur->val) min=cur->val;
+		cur=cur->Next;
+	}
+	return min;
+}
+
+void remove_min(Node *&root){
+	if (root==nullptr) return;
+	int min=get_min(root);
+	Node *cur=root;
+	if (cur->Next==root){
+		delete root;
+		root=nullptr;
+		return;
+	}
+	while(cur->Next!=root){
+		if (cur->Next->val!=min){
+			cur=cur->Next;
+			continue;
+		}
+		Node *tmp=cur->Next;
+		cur->Next=cur->Next->Next;
+		delete tmp;
+	}
+	if (root->val==min){
+		if (root->Next==root){
+			delete root;
+			root=nullptr;
+			return;
+		}
+		Node *tmp=root;
+		root=root->Next;
+		cur->Next=root;
+		delete tmp;
+	}
+}

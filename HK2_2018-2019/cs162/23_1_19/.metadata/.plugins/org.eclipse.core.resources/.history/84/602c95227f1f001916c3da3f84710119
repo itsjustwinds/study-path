@@ -1,0 +1,27 @@
+/*
+ * Date.h
+ *
+ *  Created on: Jan 24, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef DATE_H_
+#define DATE_H_
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+struct date{
+	int d,m,y;
+};
+bool load_data(const char *path,date a[],int &n);
+bool save_data(const char *path,date a[],int &n);
+bool operator > (date a, date b){
+	if (a.y!=b.y) return a.y>b.y;
+	if (a.m!=b.m) return a.m>b.m;
+	return a.d>b.d;
+}
+
+
+#endif /* DATE_H_ */

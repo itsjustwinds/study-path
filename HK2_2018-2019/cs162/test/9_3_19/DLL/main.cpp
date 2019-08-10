@@ -1,0 +1,143 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 9, 2019
+ *      Author: huy
+ */
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+struct Node{
+	int val;
+	Node *Prev,*Next;
+};
+void input(ifstream &fin,Node *&head);
+void output_head(ofstream &fout,Node *&head);
+void output_tail(ofstream &fout,Node *&tail);
+void delete_all(Node *&head);
+void create_tail(Node *&head,Node *&tail);
+void remove_X(Node *&head,Node *&tail,int x);
+void remove_all_X(Node *&head,Node *&tail,int x);
+int main(){
+	ifstream fin;
+
+	fin.open("input.txt");
+	Node *head=new Node;
+	Node *tail;
+	input(fin,head);
+	fin.close();
+
+	create_tail(head,tail);
+	remove_all_X(head,tail,3);
+	ofstream fout;
+
+	fout.open("output1.txt");
+	output_head(fout,head);
+	fout.close();
+
+	fout.open("output2.txt");
+	output_tail(fout,tail);
+	fout.close();
+	return 0;
+}
+
+void remove_all_X(Node *&head,Node *&tail,int x){
+	Node *cur=head;
+	while(cur!=nullptr){
+		if (cur->val!=x) {
+			cur=cur->Next;
+			continue;
+		}
+		if (cur->Prev!=nullptr) cur->Prev->Next=cur->Next;
+		if (cur->Next!=nullptr) cur->Next->Prev=cur->Prev;
+		if (cur->Prev==nullptr) head=cur->Next;
+		if (cur->Next==nullptr) tail=cur->Prev;
+		Node *tmp=cur;
+		cur=cur->Next;
+		delete tmp;
+	}
+}
+
+void remove_X(Node *&head,Node *&tail,int x){
+	if (head==nullptr) return;
+	Node *cur=head;
+	for (;cur!=nullptr;cur=cur->Next){
+		if (cur->val!=x) continue;
+		Node *Left=cur->Prev;
+		Node *Right=cur->Next;
+		delete cur;
+		if (Left==nullptr&&Right==nullptr){
+			head=nullptr;
+			tail=nullptr;
+			return;
+		}
+		if (Left==nullptr){
+			head=Right;
+			head->Prev=nullptr;
+			return;
+		}
+		if (Right==nullptr){
+			tail=Left;
+			tail->Next=nullptr;
+			return;
+		}
+		Left->Next=Right;
+		Right->Prev=Left;
+		return;
+	}
+}
+
+void input(ifstream &fin,Node *&head){
+	int x;
+	fin>>x;
+	Node *cur=head;
+	while(x){
+		Node *tmp=new Node;
+		tmp->val=x;
+		tmp->Next=nullptr;
+		tmp->Prev=cur;
+		cur->Next=tmp;
+		cur=cur->Next;
+		fin>>x;
+	}
+	cur=head->Next;
+	delete head;
+	head=cur;
+	if (head!=nullptr) head->Prev=nullptr;
+}
+
+void create_tail(Node *&head,Node *&tail){
+	if (head==nullptr){
+		tail=nullptr;
+		return;
+	}
+	Node *cur=head;
+	for (;cur->Next!=nullptr;cur=cur->Next){}
+	tail=cur;
+}
+
+void output_head(ofstream &fout,Node *&head){
+	if (head==nullptr) {
+		fout<<0;
+		return;
+	}
+	fout<<head->val<<" ";
+	output_head(fout,head->Next);
+}
+
+void output_tail(ofstream &fout,Node *&tail){
+	if (tail==nullptr) {
+		fout<<0;
+		return;
+	}
+	fout<<tail->val<<" ";
+	output_tail(fout,tail->Prev);
+}
+
+void delete_all(Node *&head){
+	if (head==nullptr) return;
+	delete(head->Next);
+	delete head;
+}

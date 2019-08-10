@@ -1,0 +1,15 @@
+20:09:07 **** Incremental Build of configuration Debug for project ex03 ****
+make all 
+Building file: ../Oxy_function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Oxy_function.d" -MT"Oxy_function.o" -o "Oxy_function.o" "../Oxy_function.cpp"
+Finished building: ../Oxy_function.cpp
+ 
+Building target: ex03
+Invoking: Cross G++ Linker
+g++  -o "ex03"  ./18125130_Ex03.o ./Oxy_function.o   
+Finished building target: ex03
+ 
+
+20:09:08 Build Finished. 0 errors, 0 warnings. (took 617ms)
+

@@ -1,0 +1,47 @@
+/*
+ * trie.cpp
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+
+#include"trie.h"
+using namespace std;
+
+void trie::add_word(string S,string file){
+	if (!S.size()){
+		files.push_back(file);
+		return;
+	}
+	char beg=S.begin(); int id=getid(beg);
+	if (id==-1){
+		id=had.size();
+		had.push_back(beg);
+		trie New=trie();
+		Next.push_back(New);
+	}
+	trie New=getNode(id);
+	S.erase(S.begin());
+	New.add_word(S,file);
+}
+
+int trie::getid(char s){
+	for (int i=0;i<had.size();++i)
+	if (had[i]==s) return i;
+	return -1;
+}
+
+trie trie::getNode(int id){
+	return Next[id];
+}
+
+vector<string > trie::get_all_files(){
+	return files;
+}
+
+int trie::check_link(string s){
+	for (int i=0;i<files.size();++i)
+		if (s==files[i]) return 1;
+	return 0;
+}
+

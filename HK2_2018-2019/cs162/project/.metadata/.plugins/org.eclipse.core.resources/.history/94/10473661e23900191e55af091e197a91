@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#include<iostream>
+#include"login.h"
+#include"linuxF.h"
+using namespace std;
+int main(){
+	//login Login;
+	//Login.screen();
+	linuxF LinuxF;
+	initscr();
+	do{
+		int key=LinuxF.inputkey();
+	}while(LinuxF.key!=-1);
+	printf("%c",LinuxF.key);
+	endwin();
+	return 0;
+}
+
+

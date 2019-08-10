@@ -1,0 +1,27 @@
+/*
+ * function.h
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+#include<iostream>
+using namespace std;
+void init_array(int n);
+void output_array(int now,int n,int *&a);
+/////////////////////////
+void output_reversed_array(int now,int n,int *&a);
+///////////////////////////////////////////
+int sum(int now,int n,int *&a);
+////////////////////////////////////////////
+int distinct(int now,int n,int *&a,int *&dd);
+void mark(int now,int n,int val,int *&a,int *&dd);
+/////////////////////////////////////////////
+bool only_odd(int now,int n,int *&a);
+//////////////////////////////////////////////
+int max(int now,int n,int *&a);
+
+
+#endif /* FUNCTION_H_ */

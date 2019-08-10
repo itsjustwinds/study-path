@@ -1,0 +1,58 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 8, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(ifstream &fin,Node *&root){
+	int x;
+	fin>>x;
+	Node *cur=root;
+	while(x){
+		Node *tmp=new Node;
+		tmp->val=x;
+		tmp->Next=nullptr;
+		cur->Next=tmp;
+		cur=cur->Next;
+		fin>>x;
+	}
+	cur=root->Next;
+	delete root;
+	root=cur;
+}
+
+void output(ofstream &fout,Node *&root){
+	if (root==nullptr) {
+		fout<<0;
+		return;
+	}
+	fout<<root->val<<" ";
+	output(fout,root->Next);
+}
+
+void delete_pointer(Node *&root){
+	if (root==nullptr) return;
+	delete_pointer(root->Next);
+	delete root;
+}
+
+void get_list(Node *&root,Node *&list,int is_odd){
+	int cnt=0;
+	Node *cur_list=list;
+	for (Node *cur=root;cur!=nullptr;cur=cur->Next){
+		++cnt;
+		if (cnt%2==is_odd){
+			Node *tmp=new Node;
+			tmp->val=cur->val;
+			tmp->Next=nullptr;
+			cur_list->Next=tmp;
+			cur_list=cur_list->Next;
+		}
+	}
+	cur_list=list->Next;
+	delete list;
+	list=cur_list;
+}

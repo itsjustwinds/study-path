@@ -1,0 +1,22 @@
+/*
+ * linuxF.h
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef LINUXF_H_
+#define LINUXF_H_
+#include <iostream>
+#include <stdio.h>
+#include <ncurses.h>
+
+using namespace std;
+struct linuxF{
+	void gotoXY(int x,int y);
+	int inputkey();
+	void clrscr();
+};
+
+
+#endif /* LINUXF_H_ */

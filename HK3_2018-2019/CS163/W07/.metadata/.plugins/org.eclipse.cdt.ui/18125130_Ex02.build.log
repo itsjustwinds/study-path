@@ -1,0 +1,20 @@
+15:05:54 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building file: ../Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ex02_2.d" -MT"Ex02_2.o" -o "Ex02_2.o" "../Ex02_2.cpp"
+Finished building: ../Ex02_2.cpp
+ 
+Building target: 18125130_Ex02
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex02"  ./18125130_Ex02.o ./Ex02_1.o ./Ex02_2.o ./Ex02_3.o   
+Finished building target: 18125130_Ex02
+ 
+
+15:05:55 Build Finished. 0 errors, 0 warnings. (took 917ms)
+

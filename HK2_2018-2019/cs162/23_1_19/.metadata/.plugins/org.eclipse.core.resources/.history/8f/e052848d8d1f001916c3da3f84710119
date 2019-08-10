@@ -1,0 +1,30 @@
+/*
+ * Book.cpp
+ *
+ *  Created on: Jan 24, 2019
+ *      Author: huy
+ */
+
+#include"Book.h"
+
+bool load_data(const char *path, book a[], int &n){
+	ifstream fin(path);
+	if (!fin.is_open())
+		return 0;
+	fin>>n;
+	for (int i=0;i<n;++i)
+		input(fin,a[i]);
+	fin.close();
+	return 1;
+}
+
+void input(ifstream &fin,book &a){
+	char Stmp[5005];
+	fin>>a.ID;
+	fin.ignore(1000,'\n');
+	fin.get(Stmp,5005,'\n');
+	a.s=new char[strlen(Stmp)+1];
+	strcpy(a.s,Stmp);
+	fin>>a.stock;
+	fin>>a.price;
+}

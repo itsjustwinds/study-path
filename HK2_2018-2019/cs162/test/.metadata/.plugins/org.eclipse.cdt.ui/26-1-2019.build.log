@@ -1,0 +1,15 @@
+15:45:42 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./dmcs/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../main.cpp:12: multiple definition of `main'
+./dmcs/main.o:/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../dmcs/main.cpp:21: first defined here
+makefile:48: recipe for target '26-1-2019' failed
+collect2: error: ld returned 1 exit status
+make: *** [26-1-2019] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+15:45:42 Build Failed. 4 errors, 0 warnings. (took 171ms)
+

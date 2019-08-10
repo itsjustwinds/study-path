@@ -1,0 +1,43 @@
+/*
+ * login.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+
+#include"login.h"
+int login::screen(){
+	linuxF LinuxF;
+	int curX=20,curY=15;
+	while(1){
+		LinuxF.gotoXY(15,7);
+		printf("STUDENT MANAGER SYSTEM\n");
+		LinuxF.gotoXY(20,15);
+		printf("Login");
+		LinuxF.gotoXY(20,16);
+		printf("exit");
+		for (int i=15;i<=16;++i){
+			LinuxF.gotoXY(20,i);
+			printf(" ");
+		}
+		LinuxF.gotoXY(curX,curY);
+		printf(">");
+		while(1){
+			if (LinuxF.kbhit()){
+				int key=_getch();
+				if (key=='w'){
+					if (curY!=15) --curY;
+					break;
+				}
+				if (key=='s'){
+					if (curY!=16) ++curY;
+					break;
+				}
+			}
+			else sleep(1);
+
+		}
+	}
+	return 1;
+}
+

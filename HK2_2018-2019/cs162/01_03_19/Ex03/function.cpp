@@ -1,0 +1,60 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 1, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(ifstream &fin, Node *&root,int &x,int &y){
+	root=new Node;
+	Node *cur;
+	cur=root;
+	while(1){
+		int x;
+		fin>>x;
+		Node *tmp;
+		tmp=new Node;
+		tmp->val=x;
+		tmp->Next=nullptr;
+		cur->Next=tmp;
+		cur=tmp;
+		if (x==0) break;
+	}
+	fin>>x>>y;
+	cur=root->Next;
+	delete root;
+	root=cur;
+}
+
+void insert_after(Node *&root,int x,int y,int ok){
+	if (root==nullptr){
+		if (ok) return;
+		root=new Node;
+		root->val=x;
+		root->Next=nullptr;
+		return;
+	}
+	if (root->val==y){
+		Node *tmp=root->Next;
+		root->Next=new Node;
+		root->Next->val=x;
+		root->Next->Next=tmp;
+		insert_after(root->Next,x,y,1);
+		return;
+	}
+	insert_after(root->Next,x,y,ok);
+}
+
+void output(ofstream &fout,Node *&root){
+	if (root==nullptr) return;
+	fout<<root->val<<" ";
+	output(fout,root->Next);
+}
+
+void delete_pointer(Node *&root){
+	if (root==nullptr) return;
+	delete_pointer(root->Next);
+	delete root;
+}

@@ -1,0 +1,19 @@
+11:26:43 **** Incremental Build of configuration Debug for project search_engine ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:32:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=1;i<it.size();++i)
+                  ~^~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: search_engine
+Invoking: Cross G++ Linker
+g++  -o "search_engine"  ./System.o ./main.o ./trie.o   
+Finished building target: search_engine
+ 
+
+11:26:44 Build Finished. 0 errors, 1 warnings. (took 973ms)
+

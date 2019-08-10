@@ -1,0 +1,50 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(int &n,pNode *&root){
+	cin>>n;
+	root=new pNode;
+	pNode *cur=root;
+	for (int i=0;i<n;++i){
+		cur->pNext=new pNode;
+		cur=cur->pNext;
+		cin>>cur->val;
+	}
+	cur->pNext=nullptr;
+	cur=root->pNext;
+	delete root;
+	root=cur;
+}
+
+void display(pNode *&root){
+	if (root==nullptr) return;
+	cout<<root->val<<" ";
+	display(root->pNext);
+}
+
+void delete_pointer(pNode *&root){
+	if (root==nullptr) return;
+	delete_pointer(root->pNext);
+	delete root;
+}
+
+int greatest_frequency(int n,pNode *root){
+	pNode cur=root;
+	int res,cnt;
+	while(cur != nullptr){
+		int tmp=count(cur,cur->val);
+		if (tmp>cnt){
+			cnt=tmp;
+			res=cur->val;
+		}
+		cur=cur->pNext;
+	}
+	if (cnt<=1) return -1;
+	return res;
+}

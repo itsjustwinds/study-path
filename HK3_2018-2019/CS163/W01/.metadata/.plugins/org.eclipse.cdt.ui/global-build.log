@@ -1,0 +1,1426 @@
+22:13:58 **** Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In constructor ‘ChainingHashtable::ChainingHashtable(int)’:
+../function.cpp:12:23: error: cannot convert ‘LinkedList*’ to ‘LinkedList**’ in assignment
+  a=new LinkedList[Size];
+                       ^
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:14:16 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:16:01 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:16:16 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:16:48 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:23:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:23:2: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ struct ChainingHashtable
+        ^~~~~~~~~~~~~~~~~
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:17:42 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+In file included from ../function.cpp:8:0:
+../function.h:22:33: error: return type specification for constructor invalid
+  void ChainingHashtable(int Size);
+                                 ^
+../function.cpp:10:51: error: return type specification for constructor invalid
+ void ChainingHashtable::ChainingHashtable(int Size){
+                                                   ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:18:08 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:22:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:22:2: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ struct ChainingHashtable
+        ^~~~~~~~~~~~~~~~~
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:19:01 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+In file included from ../function.cpp:8:0:
+../function.h:22:32: error: ISO C++ forbids declaration of ‘ChainingHashtableinit’ with no type [-fpermissive]
+  ChainingHashtableinit(int Size);
+                                ^
+../function.cpp:10:50: error: ISO C++ forbids declaration of ‘ChainingHashtableinit’ with no type [-fpermissive]
+ ChainingHashtable::ChainingHashtableinit(int Size){
+                                                  ^
+../function.cpp: In member function ‘int ChainingHashtable::ChainingHashtableinit(int)’:
+../function.cpp:15:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:19:26 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp:10:50: error: ISO C++ forbids declaration of ‘ChainingHashtableinit’ with no type [-fpermissive]
+ ChainingHashtable::ChainingHashtableinit(int Size){
+                                                  ^
+../function.cpp:10:50: error: no ‘int ChainingHashtable::ChainingHashtableinit(int)’ member function declared in class ‘ChainingHashtable’
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:19:32 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:22:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:22:2: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ struct ChainingHashtable
+        ^~~~~~~~~~~~~~~~~
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../function.h:18:8: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:18:8: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:22:54 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:24:02 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:24:16 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:25:38 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int Size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:28:08 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:11: error: ‘int LinkedList::val’ is private within this context
+   a[pos]->val=x;
+           ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:11: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   a[pos]->Next=nullptr;
+           ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:28:24 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:22:17: error: ‘int LinkedList::val’ is private within this context
+   this->a[pos]->val=x;
+                 ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:23:17: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   this->a[pos]->Next=nullptr;
+                 ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:26:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:36:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:37:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:47:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:48:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:56:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:30:27 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:23:13: error: ‘int LinkedList::val’ is private within this context
+   tmp[pos]->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:24:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   tmp[pos]->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:30:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:30:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:37:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:38:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:48:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:49:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:57:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:30:59 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In member function ‘void ChainingHashtable::add(int)’:
+../function.cpp:23:13: error: ‘int LinkedList::val’ is private within this context
+   tmp[pos]->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:24:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   tmp[pos]->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:27:37: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  while(now->Next!=nullptr) now=now->Next;
+                                     ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:28:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next=new LinkedList;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->val=x;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:29:13: error: ‘int LinkedList::val’ is private within this context
+  now->Next->val=x;
+             ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:30:7: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp:30:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  now->Next->Next=nullptr;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘bool ChainingHashtable::exist(int)’:
+../function.cpp:37:12: error: ‘int LinkedList::val’ is private within this context
+   if (now->val==x) return 1;
+            ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:38:12: error: ‘LinkedList* LinkedList::Next’ is private within this context
+   now=now->Next;
+            ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In member function ‘void ChainingHashtable::print()’:
+../function.cpp:48:22: error: ‘int LinkedList::val’ is private within this context
+    printf("%d ",now->val);
+                      ^~~
+In file included from ../function.cpp:8:0:
+../function.h:14:6: note: declared private here
+  int val;
+      ^~~
+../function.cpp:49:13: error: ‘LinkedList* LinkedList::Next’ is private within this context
+    now=now->Next;
+             ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+../function.cpp: In function ‘void delete_linkedlist(LinkedList*)’:
+../function.cpp:57:23: error: ‘LinkedList* LinkedList::Next’ is private within this context
+  delete_linkedlist(a->Next);
+                       ^~~~
+In file included from ../function.cpp:8:0:
+../function.h:15:14: note: declared private here
+  LinkedList *Next;
+              ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:31:11 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:31:29 **** Incremental Build of configuration Debug for project 18125130_Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:20: error: no matching function for call to ‘ChainingHashtable::ChainingHashtable()’
+  ChainingHashtable x;
+                    ^
+In file included from ../main.cpp:8:0:
+../function.h:24:2: note: candidate: ChainingHashtable::ChainingHashtable(int)
+  ChainingHashtable(int size);
+  ^~~~~~~~~~~~~~~~~
+../function.h:24:2: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(const ChainingHashtable&)
+ class ChainingHashtable
+       ^~~~~~~~~~~~~~~~~
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../function.h:19:7: note: candidate: constexpr ChainingHashtable::ChainingHashtable(ChainingHashtable&&)
+../function.h:19:7: note:   candidate expects 1 argument, 0 provided
+../main.cpp:14:4: error: invalid use of ‘ChainingHashtable::ChainingHashtable’
+  x.ChainingHashtable(size);
+    ^~~~~~~~~~~~~~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:44:18 **** Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+../class.cpp:1:10: fatal error: class.h: No such file or directory
+ #include <class.h>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [class.o] Error 1
+subdir.mk:21: recipe for target 'class.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:44:34 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:1:10: fatal error: class.h: No such file or directory
+ #include <class.h>
+          ^~~~~~~~~
+compilation terminated.
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:44:38 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:1:10: fatal error: class.h: No such file or directory
+ #include <class.h>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:44:52 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 18125130_Ex02
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex02"  ./class.o ./main.o   
+Finished building target: 18125130_Ex02
+ 
+22:46:27 **** Build of configuration Debug for project 18125130_Ex03 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 18125130_Ex03
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex03"  ./class.o ./main.o   
+Finished building target: 18125130_Ex03
+ 
+22:46:34 **** Incremental Build of configuration Debug for project 18125130_Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:09 **** Build of configuration Debug for project 18125130_Ex04 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 18125130_Ex04
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex04"  ./class.o ./main.o   
+Finished building target: 18125130_Ex04
+ 
+22:50:53 **** Build of configuration Debug for project 18125130_Ex05 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+../class.cpp: In member function ‘bool DoubleHashing::exist(int)’:
+../class.cpp:15:34: warning: unused variable ‘k’ [-Wunused-variable]
+  int i = x % sz, j = x % sz - 1, k = 0;
+                                  ^
+Finished building: ../class.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 18125130_Ex05
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex05"  ./class.o ./main.o   
+Finished building target: 18125130_Ex05
+ 
+22:51:10 **** Incremental Build of configuration Debug for project 18125130_Ex05 ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building target: 18125130_Ex05
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex05"  ./class.o ./main.o   
+Finished building target: 18125130_Ex05
+ 
+23:18:50 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:59 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 18125130_Ex02
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex02"  ./class.o ./main.o   
+Finished building target: 18125130_Ex02
+ 
+23:19:15 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+make: Nothing to be done for 'all'.

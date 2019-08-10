@@ -1,0 +1,21 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 9, 2019
+ *      Author: huy
+ */
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+struct Node{
+	int val;
+	Node *Prev,*Next;
+};
+void input(ifstream &fin,Node *&head);
+void output(ofstream &fout,Node *&head);
+void delete_all(Node *&head);
+int main(){
+
+}

@@ -1,0 +1,249 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+struct Node {
+	int val1, val2;
+	Node* Left, *Mid, *Right, *parent;
+	int n;
+
+	Node(int x) {
+		val1 = x;
+		Left = Mid = Right = parent = NULL;
+		n = 1;
+	}
+
+	Node(int x, Node* pre) {
+		val1 = x;
+		Left = Mid = Right = NULL;
+		parent = pre;
+		n = 1;
+	}
+};
+
+void insert_to_tree(Node* &root, int data);
+void addValue(Node* root, int x);
+int compare(Node* root, int x);
+void splitLeaf(Node* root, int data);
+void push_to_parent(Node*root, Node* item);
+void splitThreeNode(Node* root, Node* item);
+void delete_tree(Node* & root);
+
+int main() {
+	ifstream fin;
+	fin.open("input.txt");
+
+	int n;
+	fin >> n;
+	int* a = new int[n];
+	for (int i = 0; i < n; i++) fin >> a[i];
+
+	Node* root = NULL;
+	for (int i = 0; i < n; i++) {
+		insert_to_tree(root, a[i]);
+	}
+
+
+	delete_tree(root);
+
+	delete[]a;
+	fin.close();
+	return 0;
+}
+
+void insert_to_tree(Node* &root, int data) {
+	if (root == NULL) {
+		root = new Node(data);
+		return;
+	}
+
+
+	//Case: Node is leaf
+	if (root->Left == NULL && root->Right == NULL && root->Mid == NULL) {
+		if (root->n == 1) { //Leaf has 1 item
+			if (data > root->val1) {
+				root->val2 = data;
+				root->n = 2;
+			}
+			else {
+				root->val2 = root->val1;
+				root->val1 = data;
+				root->n = 2;
+			}
+		}
+		else { //Leaf has 2 item and needs split
+			splitLeaf(root, data);
+			if (root->parent != NULL) {
+				push_to_parent(root->parent, root);
+			}
+		}
+		return;
+	}
+
+	//On travesal
+
+	if (data < root->val1) {
+		insert_to_tree(root->Left, data);
+ 		if (root->Left) root->Left->parent = root;
+	}
+	else {
+		if (root->n == 1) { //2 children
+			insert_to_tree(root->Right, data);
+			if (root->Right) root->Right->parent = root;
+		}
+		else { //3 children
+			if (data < root->val2)
+			{
+				insert_to_tree(root->Mid, data);
+				if (root->Mid) root->Mid->parent = root;
+			}
+			else
+			{
+				insert_to_tree(root->Right, data);
+				if (root->Right) root->Right->parent = root;
+			}
+
+		}
+	}
+}
+
+void addValue(Node* root, int x) {
+	root->val2 = x;
+	if (root->val1 > root->val2) swap(root->val1, root->val2);
+}
+
+int compare(Node* root, int x) {
+
+	if (x < root->val1) return 1;
+
+	if (root->n == 2) {
+		if (root->val1 < x && x < root->val2) return  0;
+		if (x > root->val2) return -1;
+	}
+}
+
+void splitLeaf(Node* root, int data) {
+
+
+	if (data < root->val1) {
+		root->Left = new Node(data, root);
+		root->Right = new Node(root->val2, root);
+		root->n = 1;
+	}
+	else
+	if (root->n == 2 && root->val1 < data && data < root->val2) {
+		root->Left = new Node(root->val1, root);
+		root->Right = new Node(root->val2, root);
+		root->n = 1;
+		root->val1 = data;
+	}
+	else
+	if (root->n == 2 && data > root->val2) {
+		root->Left = new Node(root->val1, root);
+		root->Right = new Node(data,root);
+		root->n = 1;
+		root->val1 = root->val2;
+	}
+}
+
+void push_to_parent(Node*root, Node* item) {
+	if (root->n == 1) {//1 item in parent Node
+		root->n = 2;
+		if (item->val1 < root->val1) {
+			root->val2 = root->val1;
+			root->val1 = item->val1;
+			root->Left = item->Left;
+			root->Left->parent = root;
+			root->Mid = item->Right;
+			root->Mid->parent = root;
+		}
+		else {
+			root->val2 = item->val1;
+			root->Mid = item->Left;
+			root->Mid->parent = root;
+			root->Right = item->Right;
+			root->Right->parent = root;
+		}
+
+	}
+	else {
+		splitThreeNode(root, item);
+		if (root->parent != NULL) {
+			push_to_parent(root->parent, root);
+		}
+	}
+}
+
+void splitThreeNode(Node* root, Node* item) {
+
+	Node* Temp = NULL;
+
+	if (item->val1 < root->val1) { //item is Left Node of root
+		root->Left = item;
+		root->Left->parent = root;
+		Temp = new Node(root->val2, root);
+		root->n = 1;
+		Temp->Left = root->Mid;
+		Temp->Left->parent = Temp;
+		Temp->Right = root->Right;
+		Temp->Right->parent = Temp;
+		root->Right = Temp;
+		root->Right->parent = root;
+		root->Mid = NULL;
+	}
+	else
+	if (root->val1 < item->val1 && item->val1 < root->val2) {// item is Mid Node
+		Temp = new Node(root->val1, root);
+		Temp->Left = root->Left;
+		Temp->Left->parent = Temp;
+		Temp->Right = item->Left;
+		Temp->Right->parent = Temp;
+		root->Left = Temp;
+
+		Temp = new Node(root->val2, root);
+		Temp->Left = item->Right;
+		Temp->Left->parent = Temp;
+		Temp->Right = root->Right;
+		Temp->Right->parent = Temp;
+		root->Right = Temp;
+
+		root->val1 = item->val1;
+		root->Mid = NULL;
+		root->n = 1;
+	}
+	else {//item is Right Node
+		root->Right = item;
+		root->Right->parent = root;
+		Temp = new Node(root->val1, root);
+		Temp->Left = root->Left;
+		Temp->Left->parent = Temp;
+		Temp->Right = root->Mid;
+		Temp->Right->parent = Temp;
+		root->Left = Temp;
+		root->Left->parent = root;
+		root->n = 1;
+		root->Mid = NULL;
+		root->val1 = root->val2;
+	}
+}
+
+void delete_tree(Node* & root) {
+	if (root == NULL) return;
+	if (root->Mid == NULL && root->Left == NULL && root->Right == NULL) {
+		cout <<root->val1 << " ";
+		if (root->n == 2)  cout <<root->val2 << " ";
+	}
+	else
+	if (root->n == 1) {
+		delete_tree(root->Left);
+		cout << root->val1 << " ";
+		delete_tree(root->Right);
+	}
+	else
+	if (root->n == 2) {
+		delete_tree(root->Left);
+		cout << root->val1 << " ";
+		delete_tree(root->Mid);
+		cout << root->val2 << " ";
+		delete_tree(root->Right);

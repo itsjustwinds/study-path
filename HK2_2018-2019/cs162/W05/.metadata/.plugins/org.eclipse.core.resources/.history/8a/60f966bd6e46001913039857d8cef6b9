@@ -1,0 +1,21 @@
+/*
+ * book_store.cpp
+ *
+ *  Created on: Mar 14, 2019
+ *      Author: huy
+ */
+
+#include"book_store.h"
+
+
+void book_store::delete_all(book *&item){
+	if (item==nullptr) return;
+	delete_all(item->Next);
+	delete item;
+}
+
+void book_store::init(){
+	item=nullptr;
+}
+
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1551231033 source:/home/huy/Documents/HK2 2018-2019/test/linuxF.cpp
+	"linuxF.h"
+
+1551231025 /home/huy/Documents/HK2 2018-2019/test/linuxF.h
+	<iostream>
+	<stdio.h>
+	<ncurses.h>
+	<unistd.h>
+
+1551231045 source:/home/huy/Documents/HK2 2018-2019/test/login.cpp
+	"login.h"
+
+1551231039 /home/huy/Documents/HK2 2018-2019/test/login.h
+	<iostream>
+	<stdio.h>
+	"linuxF.h"
+
+1551231973 source:/home/huy/Documents/HK2 2018-2019/test/main.cpp
+	<iostream>
+	"login.h"
+	"linuxF.h"
+

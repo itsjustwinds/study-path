@@ -1,0 +1,6 @@
+MAX_RECENT_WORKSPACES=10
+RECENT_WORKSPACES=/home/huy/Documents/HK2 2018-2019/cs162/W09\n/home/huy/Documents/HK2 2018-2019/cs162/W08\n/home/huy/Documents/HK2 2018-2019/cs162/W07\n/home/huy/Documents/HK2 2018-2019/cs162/W06\n/home/huy/Documents/HK2 2018-2019/cs162/test\n/home/huy/Documents/HK2 2018-2019/cs162/test/16_03_19\n/home/huy/Documents/HK2 2018-2019/cs162/W05\n/home/huy/Documents/HK2 2018-2019/cs162/test/23_2_19\n/home/huy/Documents/HK2 2018-2019/cs162/test/9_3_19\n/home/huy/Documents/HK2 2018-2019/cs162/01_03_19
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_RECENT_WORKSPACES=false
+SHOW_WORKSPACE_SELECTION_DIALOG=true
+eclipse.preferences.version=1

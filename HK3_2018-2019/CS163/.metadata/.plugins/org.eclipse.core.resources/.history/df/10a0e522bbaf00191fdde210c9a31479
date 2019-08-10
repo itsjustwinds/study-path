@@ -1,0 +1,36 @@
+/*
+ * trie.h
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef TRIE_H_
+#define TRIE_H_
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+class trie{
+private:
+	vector<char > had;
+	vector<trie > Next;
+	vector<string > files;
+public:
+	trie(){
+		had.clear();
+		Next.clear();
+		files.clear();
+	}
+
+	void add_word(string S,string file);
+	int getid(char s);
+	trie getNode(int id);
+	vector<string > get_all_files();
+	int check_link(string s);
+};
+
+
+
+
+#endif /* TRIE_H_ */

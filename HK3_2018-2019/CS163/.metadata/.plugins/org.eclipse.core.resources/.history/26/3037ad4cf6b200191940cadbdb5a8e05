@@ -1,0 +1,27 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+#include"System.h"
+int main(){
+	System SYSTEM;
+	//SYSTEM.get_files_name();
+	SYSTEM.InputFiles();
+	SYSTEM.load_stop_word();
+	SYSTEM.build_trie();
+	while(1){
+	SYSTEM.inputSearch();
+	SYSTEM.process_a_price();//7 done
+	SYSTEM.process_hashtag();//8 done
+	SYSTEM.process_exact_match();//9 done
+	SYSTEM.process_unknown_word();//10
+	SYSTEM.process_range_number();//11
+	}
+	//system("pause");
+	return 0;
+}
+
+
+

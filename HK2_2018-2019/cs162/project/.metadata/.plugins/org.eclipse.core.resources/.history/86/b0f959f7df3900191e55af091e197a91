@@ -1,0 +1,23 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#include<iostream>
+#include"login.h"
+#include"linuxF.h"
+using namespace std;
+int main(){
+	//login Login;
+	//Login.screen();
+	initscr();
+	linuxF LinuxF;
+	while(1){
+		if(LinuxF.inputkey()=='w') cout<<"found w\n";
+		if(LinuxF.inputkey()=='s') cout<<"found s\n";
+	}
+	return 0;
+}
+
+

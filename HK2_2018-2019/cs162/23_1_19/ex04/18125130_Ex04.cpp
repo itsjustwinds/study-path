@@ -1,0 +1,24 @@
+/*
+ * 18125130_Ex04.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+
+#include"Circle.h"
+int main(){
+	circle a[100];
+	int n;
+		bool responding=load_array("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex04/input.txt",a,n);
+		if (!responding){
+			cout<<"can not load data\n";
+			return 0;
+		}
+		int ans;
+		db res=get_sum(a,n);
+		ans=save_file("/home/huy/Documents/HK2 2018-2019/cs162/23_1_19/ex04/res.txt",res);
+		if (ans) cout<<"Find res and save successully\n";
+		return 0;
+}
+
+

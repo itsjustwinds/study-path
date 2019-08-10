@@ -1,0 +1,30 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int check(int u,int &ok,vector<int>* &edge){
+	if (ok==0) return 0;
+	if (edge[u].size()==0) return 1;
+	int cnt=0;
+	for (int i=0;i<edge[u].size();++i){
+		int v=edge[u][i];
+		cnt+=check(v,ok,edge);
+	}
+	if (cnt<3) ok=0;
+	return 0;
+}
+int main(){
+	int n;
+	vector<int>* edge;
+	cin>>n;
+	edge=new vector<int>[n+1];
+	for (int i=2;i<=n;++i){
+		int v;
+		cin>>v;
+		edge[v].push_back(i);
+	}
+	int ok=1;
+	check(1,ok,edge);
+	if(ok) cout<<"Yes";
+	else cout<<"No";
+	delete[] edge;
+}

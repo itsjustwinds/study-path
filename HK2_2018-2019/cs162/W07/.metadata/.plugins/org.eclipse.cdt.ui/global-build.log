@@ -1,0 +1,1330 @@
+16:03:10 **** Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:03:34 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:03:49 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:05 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:08:42 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:16:59 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:10: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *s="abcba";
+          ^~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:17:20 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:52 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:12:4: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  s="abcba";
+    ^~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:17:55 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:32 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:18:34 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:47 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:18:57 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:17 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:19:26 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:10 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:23:30 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:24:01 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:24:20 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:19 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:26:06 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./function.o ./main.o   
+Finished building target: EX02
+ 
+16:26:11 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:22 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:40 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:53 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:23 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:34 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:42 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:45 **** Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:24:53 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:06 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:11 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:17 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:22 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:26 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:31 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:36 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:41 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:25:50 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:14 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:27:23 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:30:35 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_fibo(int)’:
+../function.cpp:10:6: error: ambiguating new declaration of ‘void res_fibo(int)’
+ void res_fibo(int n){
+      ^~~~~~~~
+In file included from ../function.cpp:8:0:
+../function.h:12:5: note: old declaration ‘int res_fibo(int)’
+ int res_fibo(int n);
+     ^~~~~~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:31:20 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+21:41:00 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:01:39 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:02:03 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:04:44 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:06:28 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:08:29 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:74:16: error: cannot convert ‘int*’ to ‘int**’ in assignment
+  C=new int [k+1];
+                ^
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:10:04 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:74:16: error: cannot convert ‘int*’ to ‘int**’ in assignment
+  C=new int [k+1];
+                ^
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:10:09 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:11:05 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:16: error: invalid types ‘int[int]’ for array subscript
+   return C[k][n];
+                ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:12:55 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   return *(*(C+k)+n);
+                    ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+        ^
+../function.cpp:92:23: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                       ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:92:40: error: too few arguments to function ‘int get_Ckn(int, int, int*&)’
+  C[k][n]=get_Ckn(n-1,k)+get_Ckn(n-1,k-1);
+                                        ^
+../function.cpp:86:5: note: declared here
+ int get_Ckn(int k,int n,int *&C){
+     ^~~~~~~
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:14:00 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:14:07 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:14:30 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void res_Ckn(int, int)’:
+../function.cpp:80:21: error: invalid initialization of reference of type ‘int*&’ from expression of type ‘int**’
+  cout<<get_Ckn(k,n,C);
+                     ^
+In file included from ../function.cpp:8:0:
+../function.h:22:5: note: in passing argument 3 of ‘int get_Ckn(int, int, int*&)’
+ int get_Ckn(int k,int n,int *&C);
+     ^~~~~~~
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   return *(*(C+k)+n);
+                    ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k,C)+get_Ckn(n-1,k-1,C);
+        ^
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:14:49 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘int get_Ckn(int, int, int*&)’:
+../function.cpp:88:9: error: invalid types ‘int[int]’ for array subscript
+   C[k][n]=n;
+         ^
+../function.cpp:89:20: error: invalid type argument of unary ‘*’ (have ‘int’)
+   return *(*(C+k)+n);
+                    ^
+../function.cpp:91:12: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+            ^
+../function.cpp:91:31: error: invalid types ‘int[int]’ for array subscript
+  if (C[k][n]!=0) return C[k][n];
+                               ^
+../function.cpp:92:8: error: invalid types ‘int[int]’ for array subscript
+  C[k][n]=get_Ckn(n-1,k,C)+get_Ckn(n-1,k-1,C);
+        ^
+../function.cpp:93:15: error: invalid types ‘int[int]’ for array subscript
+  return C[k][n];
+               ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:15:09 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:19:15 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:20:59 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:28:21 **** Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void init_array(int)’:
+../function.cpp:11:3: error: ‘cin’ was not declared in this scope
+   cin>>a[i];
+   ^~~
+../function.cpp:12:2: error: ‘cout’ was not declared in this scope
+  cout<<"\n";
+  ^~~~
+../function.cpp:13:2: error: ‘output_array’ was not declared in this scope
+  output_array(0,n,a);
+  ^~~~~~~~~~~~
+../function.cpp:13:2: note: suggested alternative: ‘init_array’
+  output_array(0,n,a);
+  ^~~~~~~~~~~~
+  init_array
+../function.cpp:14:2: error: ‘output_reversed_array’ was not declared in this scope
+  output_reversed_array(0,n,a);
+  ^~~~~~~~~~~~~~~~~~~~~
+../function.cpp: In function ‘void output_array(int, int, int*&)’:
+../function.cpp:20:2: error: ‘cout’ was not declared in this scope
+  cout<<a[now]<<" ";
+  ^~~~
+../function.cpp: In function ‘void output_reversed_array(int, int, int*&)’:
+../function.cpp:27:2: error: ‘cout’ was not declared in this scope
+  cout<<a[now]<<" ";
+  ^~~~
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:28:52 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void init_array(int)’:
+../function.cpp:15:2: error: ‘output_reversed_array’ was not declared in this scope
+  output_reversed_array(0,n,a);
+  ^~~~~~~~~~~~~~~~~~~~~
+../function.cpp:15:2: note: suggested alternative: ‘output_reversed_arrat’
+  output_reversed_array(0,n,a);
+  ^~~~~~~~~~~~~~~~~~~~~
+  output_reversed_arrat
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:29:20 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:29:25 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+22:29:50 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:29:58 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:36:05 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:38:31 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:38:38 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:08 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+22:49:13 **** Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp:9:1: error: expected initializer before ‘void’
+ void Move(int n, char A, char C, char B){
+ ^~~~
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:49:17 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp:9:1: error: expected initializer before ‘void’
+ void Move(int n, char A, char C, char B){
+ ^~~~
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:49:20 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:49:24 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:47 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:50:24 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:50:41 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:51:38 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:52:57 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+22:59:53 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../18125130_Ex01.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex01.d" -MT"18125130_Ex01.o" -o "18125130_Ex01.o" "../18125130_Ex01.cpp"
+Finished building: ../18125130_Ex01.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./18125130_Ex01.o ./function.o   
+Finished building target: Ex01
+ 
+22:59:57 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:59 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:07 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../18125130_Ex01.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex01.d" -MT"18125130_Ex01.o" -o "18125130_Ex01.o" "../18125130_Ex01.cpp"
+Finished building: ../18125130_Ex01.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./18125130_Ex01.o ./function.o   
+Finished building target: Ex01
+ 
+23:01:28 **** Incremental Build of configuration Debug for project EX02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building target: EX02
+Invoking: Cross G++ Linker
+g++  -o "EX02"  ./18125130_Ex02.o ./function.o   
+Finished building target: EX02
+ 
+23:03:51 **** Build of configuration Debug for project Ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+Finished building: ../18125130_Ex02.cpp
+ 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex02
+Invoking: Cross G++ Linker
+g++  -o "Ex02"  ./18125130_Ex02.o ./function.o   
+Finished building target: Ex02
+ 
+23:03:54 **** Incremental Build of configuration Debug for project Ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:58 **** Incremental Build of configuration Debug for project Ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+23:04:38 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../18125130_Ex03.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex03.d" -MT"18125130_Ex03.o" -o "18125130_Ex03.o" "../18125130_Ex03.cpp"
+Finished building: ../18125130_Ex03.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./18125130_Ex03.o ./function.o   
+Finished building target: Ex03
+ 
+23:04:41 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:05:20 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../18125130_Ex04.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex04.d" -MT"18125130_Ex04.o" -o "18125130_Ex04.o" "../18125130_Ex04.cpp"
+Finished building: ../18125130_Ex04.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./18125130_Ex04.o ./function.o   
+Finished building target: Ex04
+ 
+23:05:22 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+23:05:27 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../18125130_Ex04.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex04.d" -MT"18125130_Ex04.o" -o "18125130_Ex04.o" "../18125130_Ex04.cpp"
+Finished building: ../18125130_Ex04.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./18125130_Ex04.o ./function.o   
+Finished building target: Ex04
+ 

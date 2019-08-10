@@ -1,0 +1,60 @@
+/*
+ * Ex02_1.cpp
+ *
+ *  Created on: Jul 10, 2019
+ *      Author: huy
+ */
+#include"Ex02_1.h"
+
+void input(int &n, int &begin, int &finish, int** &edge){
+	cin>>n>>begin>>finish;
+	edge=new int*[n];
+	for (int i=0;i<n;++i)
+		edge[i]=new int[n];
+	int u,v;
+	while(cin>>u){
+		cin>>v;
+		edge[u][v]=1;
+	}
+}
+
+void bfs(int &n,int &begin,int &finish,int** &edge,vector<int > &res){
+	queue<int > q;
+	int* bef;
+	bef=new int[n];
+	for (int i=0;i<n;++i)
+		bef[i]=-1;
+	q.push(begin);
+	bef[begin]=begin;
+	while(!q.empty()){
+		int u=q.front();
+		q.pop();
+		for (int v=0;v<n;++v){
+			if (edge[u][v]==0||bef[v]!=-1) continue;
+			bef[v]=u;
+			q.push(v);
+		}
+	}
+	if (bef[finish]==-1) return;
+	int x=finish;
+	while(x!=begin){
+		res.push_back(x);
+		x=bef[x];
+	}
+	res.push_back(x);
+	delete[] bef;
+}
+
+void answer(int &n,int &begin,int &finish,int** &edge,vector<int > &res){
+	int n,begin,finish;
+	int ** edge;
+	vector<int > res;
+	for (int i=res.size()-1;i>=0;--i)
+		cout<<res[i]<<" ";
+	for (int i=0;i<n;++i){
+		delete[] edge[i];
+		edge[i]=NULL;
+	}
+	delete[] edge;
+	edge=NULL;
+}

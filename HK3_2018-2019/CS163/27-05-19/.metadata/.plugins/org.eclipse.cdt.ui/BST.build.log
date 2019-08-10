@@ -1,0 +1,28 @@
+09:18:40 **** Incremental Build of configuration Debug for project BST ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void LCA(Node*, int, int, Node*&, int&, int&)’:
+../main.cpp:62:12: error: ‘LeftY’ was not declared in this scope
+  int LeftX=LeftY=RightX=RightY=0;
+            ^~~~~
+../main.cpp:62:12: note: suggested alternative: ‘LeftX’
+  int LeftX=LeftY=RightX=RightY=0;
+            ^~~~~
+            LeftX
+../main.cpp:62:18: error: ‘RightX’ was not declared in this scope
+  int LeftX=LeftY=RightX=RightY=0;
+                  ^~~~~~
+../main.cpp:62:25: error: ‘RightY’ was not declared in this scope
+  int LeftX=LeftY=RightX=RightY=0;
+                         ^~~~~~
+../main.cpp:62:6: warning: unused variable ‘LeftX’ [-Wunused-variable]
+  int LeftX=LeftY=RightX=RightY=0;
+      ^~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+09:18:41 Build Failed. 5 errors, 1 warnings. (took 421ms)
+

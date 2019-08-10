@@ -1,0 +1,2216 @@
+15:59:10 **** Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  root=&List;
+        ^~~~
+../main.cpp:26:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  List=&root;
+        ^~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:59:26 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  root=&List;
+        ^~~~
+../main.cpp:26:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  List=&root;
+        ^~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:23 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  root=&List;
+        ^~~~
+../main.cpp:26:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  List=&root;
+        ^~~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:37 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: invalid conversion from ‘node**’ to ‘int’ [-fpermissive]
+  root=&List;
+       ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:02:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: cannot convert ‘node**’ to ‘node*’ in assignment
+  root=&List;
+        ^~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:02:22 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: invalid conversion from ‘node**’ to ‘int’ [-fpermissive]
+  root=&List;
+       ^~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:13 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: no match for ‘operator=’ (operand types are ‘node’ and ‘node**’)
+  root=&List;
+        ^~~~
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(const node&)
+ struct node{
+        ^~~~
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node**’ to ‘const node&’
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(node&&)
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node**’ to ‘node&&’
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:7: error: no match for ‘operator=’ (operand types are ‘node’ and ‘node*’)
+  root=List;
+       ^~~~
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(const node&)
+ struct node{
+        ^~~~
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node*’ to ‘const node&’
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(node&&)
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node*’ to ‘node&&’
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:8: error: no match for ‘operator=’ (operand types are ‘node’ and ‘node**’)
+  root=&List;
+        ^~~~
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(const node&)
+ struct node{
+        ^~~~
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node**’ to ‘const node&’
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(node&&)
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node**’ to ‘node&&’
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:06:36 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:9: error: no match for ‘operator=’ (operand types are ‘node’ and ‘node*’)
+  root = List;
+         ^~~~
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(const node&)
+ struct node{
+        ^~~~
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node*’ to ‘const node&’
+../main.cpp:10:8: note: candidate: constexpr node& node::operator=(node&&)
+../main.cpp:10:8: note:   no known conversion for argument 1 from ‘node*’ to ‘node&&’
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:07:07 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:09:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:09:33 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:29 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:10:45 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:11 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:33:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void display(node*)’:
+../main.cpp:48:8: warning: unused variable ‘temp’ [-Wunused-variable]
+  node* temp=Phead;
+        ^~~~
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:33:46 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:33:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:37:51 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:03 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:26 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:45:01 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:46:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:48:43 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:53:49 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+16:53:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:45 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+17:03:41 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+17:04:04 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+17:05:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+17:06:30 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:54 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+17:07:57 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:02 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:04:19 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:04:22 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:42 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:07:44 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:54 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:08:08 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:08:10 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:08:37 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:11:13 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:11:26 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:12:42 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:12:44 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:08 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:13:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:15:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:15:24 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:18:08 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:18:19 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+22:18:41 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+22:18:43 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:17:44 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:16:46: error: invalid types ‘int [1000005][<unresolved overloaded function type>]’ for array subscript
+         while (q.empty()!=0 && a[i]>=a[q.back])q.pop_back();
+                                              ^
+../main.cpp:20:46: error: invalid types ‘int [1000005][<unresolved overloaded function type>]’ for array subscript
+         while (q.empty()!=0 && a[i]>=a[q.back])q.pop_back();
+                                              ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:21:22 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:11: error: request for member ‘push_back’ in ‘q’, which is of non-class type ‘int [1000005]’
+         q.push_back(i);
+           ^~~~~~~~~
+../main.cpp:21:18: error: request for member ‘empty’ in ‘q’, which is of non-class type ‘int [1000005]’
+         while (q.empty()!=0 && a[i]>=a[q.back])
+                  ^~~~~
+../main.cpp:21:42: error: request for member ‘back’ in ‘q’, which is of non-class type ‘int [1000005]’
+         while (q.empty()!=0 && a[i]>=a[q.back])
+                                          ^~~~
+../main.cpp:22:12: error: request for member ‘pop_back’ in ‘q’, which is of non-class type ‘int [1000005]’
+          q.pop_back();
+            ^~~~~~~~
+../main.cpp:23:11: error: request for member ‘push_back’ in ‘q’, which is of non-class type ‘int [1000005]’
+         q.push_back(i);
+           ^~~~~~~~~
+../main.cpp:24:26: error: request for member ‘front’ in ‘q’, which is of non-class type ‘int [1000005]’
+         printf("%d ",a[q.front()]);
+                          ^~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:24:30 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:27:00 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:27:58 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:29:35 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:30:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:30:37 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:32:46 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:32:53 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:33:04 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:33:41 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:33:48 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:35:23 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:2: error: ‘ios’ has not been declared
+  ios::sync_with_stdio(0);
+  ^~~
+../main.cpp:12:2: error: ‘cin’ was not declared in this scope
+  cin.tie(0);
+  ^~~
+../main.cpp:12:2: note: suggested alternative: ‘sin’
+  cin.tie(0);
+  ^~~
+  sin
+../main.cpp:13:2: error: ‘cout’ was not declared in this scope
+  cout.tie(0);
+  ^~~~
+../main.cpp:13:2: note: suggested alternative: ‘cosl’
+  cout.tie(0);
+  ^~~~
+  cosl
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:36:00 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:36:47 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:36:58 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:37:22 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:37:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:37:38 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:39:10 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:39:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:39:46 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:41:54 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:42:11 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:45:39 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:46:57 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:48:40 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+23:48:41 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:49:00 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:49:39 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+23:51:44 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:20:53 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int insert_X_before_Y(int, int, node*&)’:
+../main.cpp:40:12: warning: ‘dmcs’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   dmcs->val=x;
+   ~~~~~~~~~^~
+../main.cpp: In function ‘int main()’:
+../main.cpp:59:7: warning: ‘root’ is used uninitialized in this function [-Wuninitialized]
+  input(n,root);
+  ~~~~~^~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:24:44 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:24:47 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:25:07 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:25:39 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:27:38 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:28:03 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:28:41 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:30:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:31:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:32:23 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:33:23 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:33:47 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:34:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:35:59 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:37:29 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:38:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:38:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:38:49 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:46:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:47:00 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:47:03 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:47:30 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:48:16 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:51:07 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:51:13 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:51:33 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:51:42 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:51:56 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:52:03 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:52:06 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+08:53:11 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:53:50 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+08:54:15 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+09:00:32 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+09:10:54 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+09:11:53 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+09:12:13 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+09:12:28 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+09:12:46 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:14 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:29:11 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:21:11: error: invalid type argument of unary ‘*’ (have ‘int’)
+  cout << *a << endl;
+           ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:34:05 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:34:10 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:54 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:38:53 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:43:16 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:25:7: error: redeclaration of ‘int* p’
+  int *p = &a;
+       ^
+../main.cpp:16:7: note: ‘int* p’ previously declared here
+  int *p;
+       ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:21 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:45:26 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:59 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:52:34 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:36 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:15 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+21:53:21 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+10:32:13 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+10:32:18 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+make: Nothing to be done for 'all'.
+10:33:40 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+15:45:08 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./main.o   
+Finished building target: 26-1-2019
+ 
+15:45:12 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building file: ../dmcs/main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dmcs/main.d" -MT"dmcs/main.o" -o "dmcs/main.o" "../dmcs/main.cpp"
+Finished building: ../dmcs/main.cpp
+ 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.C
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.d" -MT".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o" -o ".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o" "../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.C"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.C
+ 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./dmcs/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../main.cpp:12: multiple definition of `main'
+makefile:48: recipe for target '26-1-2019' failed
+./dmcs/main.o:/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../dmcs/main.cpp:21: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [26-1-2019] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:39 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./dmcs/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../main.cpp:12: multiple definition of `main'
+./dmcs/main.o:/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../dmcs/main.cpp:21: first defined here
+makefile:48: recipe for target '26-1-2019' failed
+collect2: error: ld returned 1 exit status
+make: *** [26-1-2019] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:42 **** Incremental Build of configuration Debug for project 26-1-2019 ****
+make all 
+Building target: 26-1-2019
+Invoking: Cross G++ Linker
+g++  -o "26-1-2019"  ./dmcs/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../main.cpp:12: multiple definition of `main'
+./dmcs/main.o:/home/huy/Documents/HK2 2018-2019/cs162/test/26-1-2019/Debug/../dmcs/main.cpp:21: first defined here
+makefile:48: recipe for target '26-1-2019' failed
+collect2: error: ld returned 1 exit status
+make: *** [26-1-2019] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:47:31 **** Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target '23_2_19' failed
+collect2: error: ld returned 1 exit status
+make: *** [23_2_19] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:47:42 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:47:59 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:18 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:48:28 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:11 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:49:22 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:50:21 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:50:24 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:24 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:51:26 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:52:08 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:56:11 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:56:13 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:56:32 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:04:39 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:04:41 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:54 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:01 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:48 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:08:02 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:08:40 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:08:42 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:32 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:10:50 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:18 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:43 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:18:00 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:19:09 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+17:08:45 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:54:48 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:55:16 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:56:22 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:20 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:57:22 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:43 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:58:48 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+15:59:57 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:02:07 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:02:41 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:30 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+16:05:32 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:41 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:07:00 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:07:10 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:08:16 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+11:18:41 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./main.o   
+Finished building target: 23_2_19
+ 
+11:49:45 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/23_2_19/Debug/../main.cpp:22: undefined reference to `reverse(Node*&)'
+makefile:45: recipe for target '23_2_19' failed
+collect2: error: ld returned 1 exit status
+make: *** [23_2_19] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:50:18 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/23_2_19/Debug/../main.cpp:22: undefined reference to `reverse(Node*&)'
+makefile:45: recipe for target '23_2_19' failed
+collect2: error: ld returned 1 exit status
+make: *** [23_2_19] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:51:14 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+/home/huy/Documents/HK2 2018-2019/cs162/test/23_2_19/Debug/../main.cpp:22: undefined reference to `Reverse_root(Node*&)'
+makefile:45: recipe for target '23_2_19' failed
+collect2: error: ld returned 1 exit status
+make: *** [23_2_19] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:51:51 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: 23_2_19
+ 
+11:52:21 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: 23_2_19
+ 
+11:52:23 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+make: Nothing to be done for 'all'.
+11:53:23 **** Incremental Build of configuration Debug for project 23_2_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 23_2_19
+Invoking: Cross G++ Linker
+g++  -o "23_2_19"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+Finished building target: 23_2_19
+ 
+08:12:32 **** Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target '13_03_19' failed
+collect2: error: ld returned 1 exit status
+make: *** [13_03_19] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:12:42 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+08:16:57 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+08:17:02 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+08:17:13 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+08:17:30 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+08:18:54 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+08:58:01 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+08:59:48 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+09:00:41 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+09:00:46 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+09:01:25 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+09:02:49 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+09:03:31 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+09:04:38 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:45:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:04:49 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 13_03_19
+Invoking: Cross G++ Linker
+g++  -o "13_03_19"  ./main.o   
+Finished building target: 13_03_19
+ 
+09:04:51 **** Incremental Build of configuration Debug for project 13_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+15:58:21 **** Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:16:13: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+  if (dfs(now+1,n,sum+a[now],total,X)) return 1;
+          ~~~^~
+../main.cpp:16:36: error: too few arguments to function ‘int dfs(int*, int, int, int, int, int)’
+  if (dfs(now+1,n,sum+a[now],total,X)) return 1;
+                                    ^
+../main.cpp:10:5: note: declared here
+ int dfs(int *a,int now,int n,int sum,int total,int X){
+     ^~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:30:16: error: ‘sum’ was not declared in this scope
+  if (dfs(a,0,n,sum,total,X)) cout<<"YES";
+                ^~~
+../main.cpp:30:20: error: ‘total’ was not declared in this scope
+  if (dfs(a,0,n,sum,total,X)) cout<<"YES";
+                    ^~~~~
+../main.cpp:30:20: note: suggested alternative: ‘strtol’
+  if (dfs(a,0,n,sum,total,X)) cout<<"YES";
+                    ^~~~~
+                    strtol
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:47 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:16:13: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+  if (dfs(now+1,n,sum+a[now],total,X)) return 1;
+          ~~~^~
+../main.cpp:16:36: error: too few arguments to function ‘int dfs(int*, int, int, int, int, int)’
+  if (dfs(now+1,n,sum+a[now],total,X)) return 1;
+                                    ^
+../main.cpp:10:5: note: declared here
+ int dfs(int *a,int now,int n,int sum,int total,int X){
+     ^~~
+../main.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:02:02 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:30:9: warning: ‘X’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (dfs(a,0,n,0,0,X)) cout<<"YES";
+      ~~~^~~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:02:47 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:20:36: error: too few arguments to function ‘int dfs(int*, int, int, int, int, int)’
+  if (dfs(a,now+1,sum*a[now],total,X)) return 1;
+                                    ^
+../main.cpp:10:5: note: declared here
+ int dfs(int *a,int now,int n,int sum,int total,int X){
+     ^~~
+../main.cpp:22:12: error: ‘now_1’ was not declared in this scope
+  if (dfs(a,now_1,sum/a[now],total,X)) return 1;
+            ^~~~~
+../main.cpp:22:12: note: suggested alternative: ‘now’
+  if (dfs(a,now_1,sum/a[now],total,X)) return 1;
+            ^~~~~
+            now
+../main.cpp:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:03 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:22:12: error: ‘now_1’ was not declared in this scope
+  if (dfs(a,now_1,n,sum/a[now],total,X)) return 1;
+            ^~~~~
+../main.cpp:22:12: note: suggested alternative: ‘now’
+  if (dfs(a,now_1,n,sum/a[now],total,X)) return 1;
+            ^~~~~
+            now
+../main.cpp:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:11 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int dfs(int*, int, int, int, int, int)’:
+../main.cpp:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:31:9: warning: ‘X’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (dfs(a,0,n,0,0,X)) cout<<"YES";
+      ~~~^~~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:03:22 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:32:9: warning: ‘X’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (dfs(a,0,n,0,0,X)) cout<<"YES";
+      ~~~^~~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:03:36 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:03:46 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:01 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:05 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:23 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:07:08 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:07:24 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:08:18 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:25 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:49 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:51 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:52 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:35 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:11:03 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:13:05 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:13:44 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:51 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:56 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: 16_03_19
+Invoking: Cross G++ Linker
+g++  -o "16_03_19"  ./main.o   
+Finished building target: 16_03_19
+ 
+16:19:13 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:14 **** Incremental Build of configuration Debug for project 16_03_19 ****
+make all 
+make: Nothing to be done for 'all'.

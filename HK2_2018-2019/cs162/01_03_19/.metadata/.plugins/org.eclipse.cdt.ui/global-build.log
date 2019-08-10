@@ -1,0 +1,452 @@
+22:36:51 **** Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:37:43 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:53 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:38:10 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:38:50 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:38:52 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:38:59 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:33 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:41:33 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex01
+Invoking: Cross G++ Linker
+g++  -o "Ex01"  ./function.o ./main.o   
+Finished building target: Ex01
+ 
+22:49:45 **** Build of configuration Debug for project Ex02 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex02
+Invoking: Cross G++ Linker
+g++  -o "Ex02"  ./function.o ./main.o   
+Finished building target: Ex02
+ 
+22:50:16 **** Incremental Build of configuration Debug for project Ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+22:50:59 **** Incremental Build of configuration Debug for project Ex02 ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex02
+Invoking: Cross G++ Linker
+g++  -o "Ex02"  ./function.o ./main.o   
+Finished building target: Ex02
+ 
+23:00:45 **** Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+23:01:18 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:57 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex03
+Invoking: Cross G++ Linker
+g++  -o "Ex03"  ./function.o ./main.o   
+Finished building target: Ex03
+ 
+23:02:48 **** Incremental Build of configuration Debug for project Ex03 ****
+make all 
+make: Nothing to be done for 'all'.
+23:03:36 **** Incremental Build of configuration Debug for project Ex01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:04:16 **** Incremental Build of configuration Debug for project Ex02 ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project Ex04 ****
+
+Nothing to build for project Ex04
+17:59:57 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex04
+Invoking: Cross G++ Linker
+g++  -o "Ex04"  ./function.o ./main.o   
+Finished building target: Ex04
+ 
+18:00:39 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+18:05:49 **** Incremental Build of configuration Debug for project Ex04 ****
+make all 
+make: Nothing to be done for 'all'.
+18:05:50 **** Build of configuration Debug for project Ex05 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex05
+Invoking: Cross G++ Linker
+g++  -o "Ex05"  ./function.o ./main.o   
+Finished building target: Ex05
+ 
+18:06:22 **** Incremental Build of configuration Debug for project Ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+18:06:42 **** Incremental Build of configuration Debug for project Ex05 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:15 **** Build of configuration Debug for project Ex06 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex06
+Invoking: Cross G++ Linker
+g++  -o "Ex06"  ./function.o ./main.o   
+Finished building target: Ex06
+ 
+18:15:50 **** Incremental Build of configuration Debug for project Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+18:16:03 **** Incremental Build of configuration Debug for project Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+18:16:21 **** Incremental Build of configuration Debug for project Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+18:23:22 **** Build of configuration Debug for project EX07 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void input(std::ifstream&, Node*&, int&)’:
+../function.cpp:19:7: error: expected primary-expression before ‘>’ token
+  fin>>>x;
+       ^
+make: *** [function.o] Error 1
+subdir.mk:21: recipe for target 'function.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:23:22 **** Incremental Build of configuration Debug for project Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+18:23:32 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void input(std::ifstream&, Node*&, int&)’:
+../function.cpp:19:7: error: expected primary-expression before ‘>’ token
+  fin>>>x;
+       ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:23:45 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+../function.cpp: In function ‘void input(std::ifstream&, Node*&, int&)’:
+../function.cpp:19:7: error: expected primary-expression before ‘>’ token
+  fin>>>x;
+       ^
+subdir.mk:21: recipe for target 'function.o' failed
+make: *** [function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:23:47 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: EX07
+Invoking: Cross G++ Linker
+g++  -o "EX07"  ./function.o ./main.o   
+Finished building target: EX07
+ 
+18:24:46 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:34:45 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:34:45 **** Build of configuration Debug for project Ex08 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex08
+Invoking: Cross G++ Linker
+g++  -o "Ex08"  ./function.o ./main.o   
+Finished building target: Ex08
+ 
+18:37:21 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:37:21 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex08
+Invoking: Cross G++ Linker
+g++  -o "Ex08"  ./function.o ./main.o   
+Finished building target: Ex08
+ 
+18:37:36 **** Incremental Build of configuration Debug for project EX07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:37:36 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:38:53 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:12 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex08
+Invoking: Cross G++ Linker
+g++  -o "Ex08"  ./function.o ./main.o   
+Finished building target: Ex08
+ 
+18:39:22 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:23 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:40:19 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:41:53 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex08
+Invoking: Cross G++ Linker
+g++  -o "Ex08"  ./function.o ./main.o   
+Finished building target: Ex08
+ 
+18:44:45 **** Build of configuration Debug for project Ex07 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex07
+Invoking: Cross G++ Linker
+g++  -o "Ex07"  ./function.o ./main.o   
+Finished building target: Ex07
+ 
+18:45:21 **** Incremental Build of configuration Debug for project Ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:45:44 **** Incremental Build of configuration Debug for project Ex07 ****
+make all 
+make: Nothing to be done for 'all'.
+18:50:43 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:50:43 **** Build of configuration Debug for project Ex09 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:11:16: error: too few arguments to function ‘void input(std::ifstream&, Node*&, int&)’
+  input(fin,root);
+                ^
+In file included from ../main.cpp:7:0:
+../function.h:17:6: note: declared here
+ void input(ifstream &fin,Node *&root,int &x);
+      ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:21: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:50:54 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:50:54 **** Incremental Build of configuration Debug for project Ex09 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex09
+Invoking: Cross G++ Linker
+g++  -o "Ex09"  ./function.o ./main.o   
+Finished building target: Ex09
+ 
+18:51:37 **** Incremental Build of configuration Debug for project Ex09 ****
+make all 
+make: Nothing to be done for 'all'.
+18:52:04 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:52:04 **** Incremental Build of configuration Debug for project Ex09 ****
+make all 
+make: Nothing to be done for 'all'.
+18:55:49 **** Incremental Build of configuration Debug for project Ex08 ****
+make all 
+make: Nothing to be done for 'all'.
+18:55:49 **** Build of configuration Debug for project Ex11 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Ex11
+Invoking: Cross G++ Linker
+g++  -o "Ex11"  ./function.o ./main.o   
+Finished building target: Ex11
+ 
+18:56:30 **** Incremental Build of configuration Debug for project Ex11 ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,22 @@
+/*
+ * system.cpp
+ *
+ *  Created on: Jul 27, 2019
+ *      Author: huy
+ */
+
+#include"system.h"
+
+trie* system::get_trie(){
+	return root;
+}
+
+void system::load_stop_word(){
+
+}
+
+void system::build_trie(){
+	//for every file
+	//vector<word>
+	//
+}

@@ -1,0 +1,19 @@
+23:34:18 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+../18125130_Ex02.cpp: In function ‘int compare(Node*, int)’:
+../18125130_Ex02.cpp:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../18125130_Ex02.cpp
+ 
+Building target: 18125130_Ex02
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex02"  ./18125130_Ex02.o   
+Finished building target: 18125130_Ex02
+ 
+
+23:34:18 Build Finished. 0 errors, 1 warnings. (took 713ms)
+

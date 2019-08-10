@@ -1,0 +1,27 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 7, 2019
+ *      Author: huy
+ */
+#include"function.h"
+
+void input(ifstream &fin,Node *&root,int &x,int &y){
+	Node *cur=root;
+	int num;
+	fin>>num;
+	while(num){
+		cur->Next=new Node;
+		cur=cur->Next;
+		cur->val=num;
+		fin>>num;
+	}
+	cur->Next=nullptr;
+	fin>>x>>y;
+	cur=root->Next;
+	delete root;
+	root=cur;
+}
+
+
+

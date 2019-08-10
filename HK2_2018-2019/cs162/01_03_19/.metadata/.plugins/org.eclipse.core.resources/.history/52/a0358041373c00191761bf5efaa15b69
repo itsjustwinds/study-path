@@ -1,0 +1,30 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 1, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(Node *&root){
+	root=new Node;
+	Node *cur;
+	cur=root;
+	while(1){
+		int x;
+		cin>>x;
+		Node *tmp;
+		tmp=new Node;
+		tmp->val=x;
+		tmp->Next=nullptr;
+		cur->Next=tmp;
+		cur=tmp;
+		if (x==0) break;
+		cin>>x;
+	}
+	cur=root;
+	delete root;
+	root=cur;
+}
+

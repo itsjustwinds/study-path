@@ -1,0 +1,19 @@
+/*
+ * main.cpp
+ *
+ *  Created on: May 22, 2019
+ *      Author: huy
+ */
+
+#include"BST.h"
+
+int main(){
+	int* a;
+	int n;
+	cin>>n;
+	a=new int[n];
+	for (int i=0;i<n;++i)
+		cin>>a[i];
+	BST x;
+
+}

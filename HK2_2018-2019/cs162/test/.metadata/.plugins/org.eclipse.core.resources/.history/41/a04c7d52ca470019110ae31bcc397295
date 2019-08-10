@@ -1,0 +1,36 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 16, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+using namespace std;
+int dfs(int *a,int now,int n,int sum,int total,int X){
+	if(now==n) {
+		if (total+sum==X)
+			return 1;
+	}
+	//////////// +
+	if (dfs(a,now+1,n,a[now],total+sum,X)) return 1;
+	//////////// -
+	if (dfs(a,now+1,n,-a[now],total+sum,X)) return 1;
+	//////////// *
+	if (dfs(a,now+1,n,sum*a[now],total,X)) return 1;
+	//////////// /
+	if (dfs(a,now_1,n,sum/a[now],total,X)) return 1;
+}
+int main(){
+	int *a;
+	int n,X;
+	cin>>n;
+	a=new int[n];
+	for (int i=0;i<n;++i)
+		cin>>a[i];
+	if (dfs(a,0,n,0,0,X)) cout<<"YES";
+	else cout<<"NO";
+	return 0;
+}
+
+

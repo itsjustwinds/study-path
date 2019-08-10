@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 8, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+int main(){
+	Node *root=new Node;
+	Node *odd=new Node;
+	Node *even=new Node;
+	ifstream fin("input.txt");
+	input(fin,root);
+	fin.close();
+	ofstream fout("output.txt");
+
+}
+

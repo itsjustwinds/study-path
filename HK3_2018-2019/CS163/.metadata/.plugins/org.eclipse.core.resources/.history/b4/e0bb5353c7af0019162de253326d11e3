@@ -1,0 +1,13 @@
+/*
+ * trie.cpp
+ *
+ *  Created on: Jul 26, 2019
+ *      Author: huy
+ */
+
+#include"trie.h"
+using namespace std;
+
+int data::get_root(){
+	return root;
+}

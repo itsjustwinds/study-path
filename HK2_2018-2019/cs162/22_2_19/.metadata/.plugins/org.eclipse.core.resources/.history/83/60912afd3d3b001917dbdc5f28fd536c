@@ -1,0 +1,29 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(int &n,pNode *&root){
+	cin>>n;
+	root=new pNode;
+	pNode *cur=root;
+	for (int i=0;i<n;++i){
+		cur->pNext=new pNode;
+		cur=cur->pNext;
+		cin>>cur->val;
+	}
+	cur->pNext=nullptr;
+	cur=root->pNext;
+	delete root;
+	root=cur;
+}
+
+void display(int n,pNode *&root){
+	if (root==nullptr) return;
+	cout<<root->val<<" ";
+	display(n,root->pNext);
+}

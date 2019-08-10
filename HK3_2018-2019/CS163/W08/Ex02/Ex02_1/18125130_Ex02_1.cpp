@@ -1,0 +1,51 @@
+/*
+ * 18125130_Ex02_1.cpp
+ *
+ *  Created on: Jul 17, 2019
+ *      Author: huy
+ */
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+struct edge{
+	int u,v,val;
+};
+bool cmp(edge a,edge b){
+	return a.val<b.val;
+}
+int getr(int u,int *&root){
+	if (root[u]==u) return u;
+	root[u]=getr(root[u],root);
+	return root[u];
+}
+int main(){
+	int n,m;
+	vector<edge> e;
+	int *root;
+	cin>>n>>m;
+	for (int i=1;i<=m;++i){
+		int u,v,c;
+		cin>>u>>v>>c;
+		e.push_back({u,v,c});
+	}
+	sort(e.begin(),e.end(),cmp);
+	root=new int[n+1];
+	for (int i=1;i<=n;++i)
+		root[i]=i;
+	long long res=0;
+	int cnt=0;
+	for (int i=0;i<e.size();++i){
+		int u=getr(e[i].u,root);
+		int v=getr(e[i].v,root);
+		if (u==v) continue;
+		root[u]=v;
+		++cnt;
+		res+=e[i].val;
+		if(cnt==n-1) break;
+	}
+	cout<<res;
+}
+
+

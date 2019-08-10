@@ -1,0 +1,18 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+void Move(int n, char A, char C, char B){
+    if (n == 1) {
+        cout<<"Move top disk "<<A<<"  to "<<C<<"\n";
+        return;
+    }
+    Move(n-1, A, B, C);
+    cout<<"Move top disk "<<A<<"  to "<<C<<"\n";
+    Move(n-1, B, C, A);
+}
+

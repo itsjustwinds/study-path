@@ -1,0 +1,56 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 8, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+void input(ifstream &fin,Node *&root){
+	int x;
+	fin>>x;
+	Node *cur=root;
+	while(x){
+		Node *tmp=new Node;
+		tmp->val=x;
+		tmp->Next=nullptr;
+		cur->Next=tmp;
+		cur=cur->Next;
+		fin>>x;
+	}
+	cur=root->Next;
+	delete root;
+	root=cur;
+}
+
+void output(ofstream &fout,Node *&root){
+	if (root==nullptr) {
+		fout<<0;
+		return;
+	}
+	fout<<root->val<<" ";
+	output(fout,root->Next);
+}
+
+void delete_pointer(Node *&root){
+	if (root==nullptr) return;
+	delete_pointer(root->Next);
+	delete root;
+}
+
+void get_sum(Node *&root,Node *&sum){
+	Node *cur_sum=sum;
+	int total=0;
+	for (Node *cur=root;cur!=nullptr;cur=cur->Next){
+		total+=cur->val;
+		Node *tmp=new Node;
+		tmp->val=total;
+		tmp->Next=nullptr;
+		cur_sum->Next=tmp;
+		cur_sum=cur_sum->Next;
+	}
+	cur_sum=sum->Next;
+	delete sum;
+	sum=cur_sum;
+}

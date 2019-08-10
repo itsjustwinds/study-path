@@ -1,0 +1,23 @@
+/*
+ * function.h
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+#include<iostream>
+using namespace std;
+void res_fibo(int n);
+int fibo(int n,int *&f);
+/////////////////////////////
+void res_Xn_Yn(int n);
+void setup_Xn_Yn(int n,int *&X,int *&Y);
+////////////////////////////////
+void res_Xn(int n);
+void setup_Xn(int n,int *&X);
+////////////////////////////////
+void res_Ckn(int k,int n);
+int get_Ckn(int k,int n,int **&C);
+#endif /* FUNCTION_H_ */

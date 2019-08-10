@@ -1,0 +1,34 @@
+/*
+ * function.h
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+#include<iostream>
+using namespace std;
+struct pNode{
+	int val;
+	pNode *pNext;
+};
+
+void input(int &n,pNode root){
+	cin>>n;
+	root=new pNode;
+	pNode *cur=root;
+	for (int i=0;i<n;++i){
+		cur->pNext=new pNode;
+		cur=cur->pNext;
+		cin>>cur->val;
+	}
+	cur->pNext=nullptr;
+	cur=root->pNext;
+	delete root;
+	root=cur;
+}
+
+
+
+#endif /* FUNCTION_H_ */

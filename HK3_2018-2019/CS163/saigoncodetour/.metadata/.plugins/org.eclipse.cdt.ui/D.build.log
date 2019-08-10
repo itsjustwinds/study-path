@@ -1,0 +1,42 @@
+23:27:29 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:25:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:27:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:28:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:29:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:44:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:37:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘void kruskal()’:
+../main.cpp:64:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge.size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:91:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+
+23:27:29 Build Finished. 0 errors, 8 warnings. (took 817ms)
+

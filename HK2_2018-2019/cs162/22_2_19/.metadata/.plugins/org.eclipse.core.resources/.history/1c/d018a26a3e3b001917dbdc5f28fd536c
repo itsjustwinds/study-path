@@ -1,0 +1,22 @@
+/*
+ * function.h
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+#include<iostream>
+using namespace std;
+struct pNode{
+	int val;
+	pNode *pNext;
+};
+void input(int &n,pNode *&root);
+void display(pNode *&root);
+void delete_pointer(pNode *&root);
+int greatest_frequency(int n,pNode *&root);
+
+
+#endif /* FUNCTION_H_ */

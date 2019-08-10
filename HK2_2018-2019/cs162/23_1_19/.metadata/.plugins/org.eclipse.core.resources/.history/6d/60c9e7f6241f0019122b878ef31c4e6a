@@ -1,0 +1,21 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+#include"Fraction.h"
+int main(){
+	Fraction a[100];
+	int n;
+	bool responding=loadArray("D:/input.txt",a,n);
+	if (!responding){
+		cout<<"can not load data\n";
+		return 0;
+	}
+	sortAsc(a,n);
+	int ans;
+	ans = saveAFraction("D:/res.txt", a, n);
+	if (ans)cout<<"Find max and save successully\n";
+	return 0;
+}

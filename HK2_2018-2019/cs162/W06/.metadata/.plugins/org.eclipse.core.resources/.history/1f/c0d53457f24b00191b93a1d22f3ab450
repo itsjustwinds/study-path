@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 21, 2019
+ *      Author: huy
+ */
+#include"function.h"
+
+int main(){
+	Node *root;
+	ifstream fin("input.txt");
+	input(fin,root);
+	fin.close();
+	remove_min(root);
+	ofstream fout("output.txt");
+	output(fout,root,root);
+	fout.close();
+	delete_all(root,root);
+}
+

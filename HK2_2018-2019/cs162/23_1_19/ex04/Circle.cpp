@@ -1,0 +1,40 @@
+/*
+ * Circle.cpp
+ *
+ *  Created on: Jan 23, 2019
+ *      Author: huy
+ */
+#include"Circle.h"
+bool load_array(const char *path, circle a[],int &n){
+	ifstream fin(path);
+	if (!fin.is_open())
+		return 0;
+	fin>>n;
+	for (int i=0;i<n;++i)
+		fin>>a[i].x>>a[i].y>>a[i].r;
+	fin.close();
+	return 1;
+}
+
+db get_val(circle a){
+	db res=Pi*a.r*a.r;
+	return res;
+}
+
+db get_sum(circle a[],int &n){
+	db res=0;
+	for (int i=0;i<n;++i)
+		res+=get_val(a[i]);
+	return res;
+}
+
+bool save_file(const char *path,double &res){
+	ofstream fout(path);
+	if (!fout.is_open())
+		return 0;
+	fout<<fixed<<setprecision(5)<<res;
+	fout.close();
+	return 1;
+}
+
+

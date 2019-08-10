@@ -1,0 +1,109 @@
+22:48:18 **** Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int check(int, int&, std::vector<int>*&)’:
+../18125130_Ex06.cpp:8:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge[u].size();++i){
+               ~^~~~~~~~~~~~~~~
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: 18125130_Ex06
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex06"  ./18125130_Ex06.o   
+Finished building target: 18125130_Ex06
+ 
+22:49:41 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int check(int, int&, std::vector<int>*&)’:
+../18125130_Ex06.cpp:8:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge[u].size();++i){
+               ~^~~~~~~~~~~~~~~
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: 18125130_Ex06
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex06"  ./18125130_Ex06.o   
+Finished building target: 18125130_Ex06
+ 
+22:51:24 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:32 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+22:52:01 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+22:53:06 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+Building file: ../18125130_Ex06.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex06.d" -MT"18125130_Ex06.o" -o "18125130_Ex06.o" "../18125130_Ex06.cpp"
+../18125130_Ex06.cpp: In function ‘int check(int, int&, std::vector<int>*&)’:
+../18125130_Ex06.cpp:8:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge[u].size();++i){
+               ~^~~~~~~~~~~~~~~
+Finished building: ../18125130_Ex06.cpp
+ 
+Building target: 18125130_Ex06
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex06"  ./18125130_Ex06.o   
+Finished building target: 18125130_Ex06
+ 
+22:53:09 **** Incremental Build of configuration Debug for project 18125130_Ex06 ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project 18125130_Ex02 ****
+
+Nothing to build for project 18125130_Ex02
+
+**** Build of configuration Debug for project 18125130_Ex02 ****
+
+Nothing to build for project 18125130_Ex02
+
+**** Build of configuration Debug for project 18125130_Ex02 ****
+
+Nothing to build for project 18125130_Ex02
+
+**** Build of configuration Debug for project 18125130_Ex02 ****
+
+Nothing to build for project 18125130_Ex02
+23:33:49 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+../18125130_Ex02.cpp: In function ‘void delete_tree(Node*&)’:
+../18125130_Ex02.cpp:255:27: error: expected ‘}’ at end of input
+   delete_tree(root->Right);
+                           ^
+../18125130_Ex02.cpp:255:27: error: expected ‘}’ at end of input
+../18125130_Ex02.cpp: In function ‘int compare(Node*, int)’:
+../18125130_Ex02.cpp:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+subdir.mk:18: recipe for target '18125130_Ex02.o' failed
+make: *** [18125130_Ex02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:34:18 **** Incremental Build of configuration Debug for project 18125130_Ex02 ****
+make all 
+Building file: ../18125130_Ex02.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02.d" -MT"18125130_Ex02.o" -o "18125130_Ex02.o" "../18125130_Ex02.cpp"
+../18125130_Ex02.cpp: In function ‘int compare(Node*, int)’:
+../18125130_Ex02.cpp:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../18125130_Ex02.cpp
+ 
+Building target: 18125130_Ex02
+Invoking: Cross G++ Linker
+g++  -o "18125130_Ex02"  ./18125130_Ex02.o   
+Finished building target: 18125130_Ex02
+ 

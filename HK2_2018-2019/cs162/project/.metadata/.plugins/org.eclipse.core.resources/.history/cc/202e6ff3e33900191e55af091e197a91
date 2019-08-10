@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 25, 2019
+ *      Author: huy
+ */
+#include<iostream>
+#include"login.h"
+#include"linuxF.h"
+using namespace std;
+int main(){
+	//login Login;
+	//Login.screen();
+	linuxF LinuxF;
+	//initscr();
+	printf("enter any dirrection key:\n");
+	do{
+		LinuxF.key=LinuxF.inputkey();
+	}while(LinuxF.key==-1);
+	if (LinuxF.key==KEY_LEFT) printf("left\n");
+	if (LinuxF.key==KEY_UP) printf("up\n");
+	if (LinuxF.key==KEY_RIGHT) printf("right\n");
+	if (LinuxF.key==KEY_DOWN) printf("down\n");
+	//endwin();
+	return 0;
+}
+
+

@@ -1,0 +1,15 @@
+17:43:27 **** Incremental Build of configuration Debug for project Ex06 ****
+make all 
+Building file: ../function.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"function.d" -MT"function.o" -o "function.o" "../function.cpp"
+Finished building: ../function.cpp
+ 
+Building target: Ex06
+Invoking: Cross G++ Linker
+g++  -o "Ex06"  ./function.o ./main.o   
+Finished building target: Ex06
+ 
+
+17:43:28 Build Finished. 0 errors, 0 warnings. (took 519ms)
+

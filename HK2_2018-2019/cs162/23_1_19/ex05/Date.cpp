@@ -1,0 +1,47 @@
+/*
+ * Date.cpp
+ *
+ *  Created on: Jan 24, 2019
+ *      Author: huy
+ */
+
+#include"Date.h"
+
+bool load_data(const char *path, date a[],int &n){
+	ifstream fin(path);
+	if (!fin.is_open())
+		return 0;
+	fin>>n;
+	for (int i=0;i<n;++i)
+		fin>>a[i].y>>a[i].m>>a[i].d;
+	fin.close();
+	return 1;
+}
+
+bool save_data(const char *path, date a[],int &n){
+	ofstream fout(path);
+	if (!fout.is_open())
+		return 0;
+	fout<<n<<"\n";
+	for (int i=0;i<n;++i)
+		fout<<a[i].y<<" "<<a[i].m<<" "<<a[i].d<<"\n";
+	fout.close();
+	return 1;
+}
+
+bool compare(date &d1, date &d2){
+	if (d1.y!=d2.y) return d1.y>d2.y;
+	if (d1.m!=d2.m) return d1.m>d2.m;
+	return d1.d>d2.d;
+}
+
+void sort(date a[],int &n){
+	for (int i=0;i<n;++i)
+		for (int j=i+1;j<n;++j)
+			if (compare(a[i],a[j])){
+				date tmp=a[i];
+				a[i]=a[j];
+				a[j]=tmp;
+			}
+}
+

@@ -1,0 +1,3436 @@
+09:12:40 **** Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:21:45 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:19:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:22:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:13:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:29:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:13:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:30:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:13:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int check(int)’:
+../main.cpp:39:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:40:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:41:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:13:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:41:23: error: reference to ‘prev’ is ambiguous
+subdir.mk:18: recipe for target 'main.o' failed
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:13:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:42:16: error: ‘dfs’ was not declared in this scope
+    now=max(now,dfs(v,u,now));
+                ^~~
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:23:00 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:19:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:22:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:29:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:30:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int check(int)’:
+../main.cpp:39:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:40:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:41:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:41:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:42:16: error: ‘dfs’ was not declared in this scope
+    now=max(now,dfs(v,u,now));
+                ^~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:23:49 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:19:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:22:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:29:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:30:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs()’:
+../main.cpp:36:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../main.cpp: In function ‘int check(int)’:
+../main.cpp:42:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:43:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:44:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:44:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:45:27: error: too many arguments to function ‘int dfs()’
+    now=max(now,dfs(v,u,now));
+                           ^
+../main.cpp:34:5: note: declared here
+ int dfs(){
+     ^~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:24:18 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:18:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:21:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:16:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:28:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:16:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:29:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:16:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs()’:
+../main.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../main.cpp: In function ‘int check(int)’:
+../main.cpp:41:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:42:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:43:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:16:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:43:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:16:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:44:27: error: too many arguments to function ‘int dfs()’
+    now=max(now,dfs(v,u,now));
+                           ^
+../main.cpp:33:5: note: declared here
+ int dfs(){
+     ^~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:25:57 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:19:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:22:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:29:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:30:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:42:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:43:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:44:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:44:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:29:37 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:19:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:22:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:30:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:31:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:40:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:51:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:52:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:53:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:53:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:17:5: note: candidates are: int prev [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:56:5: error: reference to ‘next’ is ambiguous
+   u=next[u];
+     ^~~~
+../main.cpp:17:18: note: candidates are: int next [100005]
+ int prev[100005],next[100005],checkpoint[100005],nextval[100005],prevval[100005];
+                  ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:30:42 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:24:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:32:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:33:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:19:5: note: candidates are: int next [100005]
+ int next[maxn],checkpoint[maxn],nextval[maxn],prevval[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:54:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:55:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:19:5: note: candidates are: int next [100005]
+ int next[maxn],checkpoint[maxn],nextval[maxn],prevval[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:55:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:58:5: error: reference to ‘next’ is ambiguous
+   u=next[u];
+     ^~~~
+../main.cpp:19:5: note: candidates are: int next [100005]
+ int next[maxn],checkpoint[maxn],nextval[maxn],prevval[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:31:32 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:24:3: error: reference to ‘prev’ is ambiguous
+   prev[v]=u;
+   ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn],next[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:32:9: error: reference to ‘prev’ is ambiguous
+   int u=prev[v];
+         ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn],next[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:33:3: error: reference to ‘next’ is ambiguous
+   next[u]=v;
+   ^~~~
+../main.cpp:18:16: note: candidates are: int next [100005]
+ int prev[maxn],next[maxn];
+                ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:54:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp:55:11: error: reference to ‘next’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+           ^~~~
+../main.cpp:18:16: note: candidates are: int next [100005]
+ int prev[maxn],next[maxn];
+                ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp:55:23: error: reference to ‘prev’ is ambiguous
+    if (v==next[u]||v==prev[u]) continue;
+                       ^~~~
+../main.cpp:18:5: note: candidates are: int prev [100005]
+ int prev[maxn],next[maxn];
+     ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:220:5: note:                 template<class _BidirectionalIterator> _BidirectionalIterator std::prev(_BidirectionalIterator, typename std::iterator_traits<_Iter>::difference_type)
+     prev(_BidirectionalIterator __x, typename
+     ^~~~
+../main.cpp:58:5: error: reference to ‘next’ is ambiguous
+   u=next[u];
+     ^~~~
+../main.cpp:18:16: note: candidates are: int next [100005]
+ int prev[maxn],next[maxn];
+                ^~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:66:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_iterator_base_funcs.h:208:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:31:59 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:54:16: error: cannot convert ‘__gnu_cxx::__alloc_traits<std::allocator<data> >::value_type {aka data}’ to ‘int’ in initialization
+    int v=e[u][i];
+                ^
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:32:08 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:32:24 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:54:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:32:41 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:33:01 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:36:22 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:54:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:36:24 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:36:37 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:36:52 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:38 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:54:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:39:43 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:40:39 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:57:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:41:56 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:57:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:42:08 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:42:28 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:57:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:43:35 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:57:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:43:45 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:44:26 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, int)’:
+../main.cpp:21:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int dfs(int, int, int)’:
+../main.cpp:42:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int check()’:
+../main.cpp:53:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:57:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:44:30 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:44:40 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:46:57 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:19:23: error: expected initializer before ‘long’
+ long long checkpolong long[maxn],Nextval[maxn],Prevval[maxn];
+                       ^~~~
+../main.cpp: In function ‘void getPrev(long long int, long long int)’:
+../main.cpp:21:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp:25:3: error: ‘Prevval’ was not declared in this scope
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+../main.cpp:25:3: note: suggested alternative: ‘Prev’
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+   Prev
+../main.cpp: In function ‘void init()’:
+../main.cpp:34:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:34:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp:34:14: error: ‘Prevval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+../main.cpp:34:14: note: suggested alternative: ‘Prev’
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+              Prev
+../main.cpp: In function ‘long long int dfs(long long int, long long int, long long int)’:
+../main.cpp:40:6: error: ‘checkpolong’ was not declared in this scope
+  if (checkpolong long[u]) return c;
+      ^~~~~~~~~~~
+../main.cpp:40:18: error: expected ‘)’ before ‘long’
+  if (checkpolong long[u]) return c;
+                  ^~~~
+../main.cpp:42:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:53:13: warning: unused variable ‘ok’ [-Wunused-variable]
+   long long ok=1;
+             ^~
+../main.cpp:57:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (long long i=0;i<e[u].size();++i){
+                      ~^~~~~~~~~~~~
+../main.cpp:62:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:62:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+../main.cpp: In function ‘int main()’:
+../main.cpp:72:3: error: ‘checkpolong’ was not declared in this scope
+   checkpolong long[x]=1;
+   ^~~~~~~~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:47:11 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:19:23: error: expected initializer before ‘long’
+ long long checkpolong long[maxn],Nextval[maxn],Prevval[maxn];
+                       ^~~~
+../main.cpp: In function ‘void getPrev(long long int, long long int)’:
+../main.cpp:21:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp:25:3: error: ‘Prevval’ was not declared in this scope
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+../main.cpp:25:3: note: suggested alternative: ‘Prev’
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+   Prev
+../main.cpp: In function ‘void init()’:
+../main.cpp:34:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:34:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp:34:14: error: ‘Prevval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+../main.cpp:34:14: note: suggested alternative: ‘Prev’
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+              Prev
+../main.cpp: In function ‘long long int dfs(long long int, long long int, long long int)’:
+../main.cpp:40:6: error: ‘checkpolong’ was not declared in this scope
+  if (checkpolong long[u]) return c;
+      ^~~~~~~~~~~
+../main.cpp:40:18: error: expected ‘)’ before ‘long’
+  if (checkpolong long[u]) return c;
+                  ^~~~
+../main.cpp:42:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:53:13: warning: unused variable ‘ok’ [-Wunused-variable]
+   long long ok=1;
+             ^~
+../main.cpp:57:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (long long i=0;i<e[u].size();++i){
+                      ~^~~~~~~~~~~~
+../main.cpp:62:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:62:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+../main.cpp: In function ‘int main()’:
+../main.cpp:72:3: error: ‘checkpolong’ was not declared in this scope
+   checkpolong long[x]=1;
+   ^~~~~~~~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:47:13 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:19:23: error: expected initializer before ‘long’
+ long long checkpolong long[maxn],Nextval[maxn],Prevval[maxn];
+                       ^~~~
+../main.cpp: In function ‘void getPrev(long long int, long long int)’:
+../main.cpp:21:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp:25:3: error: ‘Prevval’ was not declared in this scope
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+../main.cpp:25:3: note: suggested alternative: ‘Prev’
+   Prevval[v]=e[u][i].c;
+   ^~~~~~~
+   Prev
+../main.cpp: In function ‘void init()’:
+../main.cpp:34:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:34:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp:34:14: error: ‘Prevval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+../main.cpp:34:14: note: suggested alternative: ‘Prev’
+   Nextval[u]=Prevval[v];
+              ^~~~~~~
+              Prev
+../main.cpp: In function ‘long long int dfs(long long int, long long int, long long int)’:
+../main.cpp:40:6: error: ‘checkpolong’ was not declared in this scope
+  if (checkpolong long[u]) return c;
+      ^~~~~~~~~~~
+../main.cpp:40:18: error: expected ‘)’ before ‘long’
+  if (checkpolong long[u]) return c;
+                  ^~~~
+../main.cpp:42:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:53:13: warning: unused variable ‘ok’ [-Wunused-variable]
+   long long ok=1;
+             ^~
+../main.cpp:57:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (long long i=0;i<e[u].size();++i){
+                      ~^~~~~~~~~~~~
+../main.cpp:62:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:62:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+../main.cpp: In function ‘int main()’:
+../main.cpp:72:3: error: ‘checkpolong’ was not declared in this scope
+   checkpolong long[x]=1;
+   ^~~~~~~~~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:49:11 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:20:17: error: expected initializer before ‘long’
+ int checkpolong long[maxn];
+                 ^~~~
+../main.cpp: In function ‘void getPrev(int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:36:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:36:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp: In function ‘long long int dfs(int, int, long long int)’:
+../main.cpp:42:6: error: ‘checkpoint’ was not declared in this scope
+  if (checkpoint[u]) return c;
+      ^~~~~~~~~~
+../main.cpp:44:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:59:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:64:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:64:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+../main.cpp: In function ‘int main()’:
+../main.cpp:74:3: error: ‘checkpoint’ was not declared in this scope
+   checkpoint[x]=1;
+   ^~~~~~~~~~
+../main.cpp:74:3: note: suggested alternative: ‘check’
+   checkpoint[x]=1;
+   ^~~~~~~~~~
+   check
+../main.cpp:79:23: warning: narrowing conversion of ‘v’ from ‘long long int’ to ‘int’ inside { } [-Wnarrowing]
+   e[u].push_back({v,c});
+                       ^
+../main.cpp:80:23: warning: narrowing conversion of ‘u’ from ‘long long int’ to ‘int’ inside { } [-Wnarrowing]
+   e[v].push_back({u,c});
+                       ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:49:28 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:20:17: error: expected initializer before ‘long’
+ int checkpolong long[maxn];
+                 ^~~~
+../main.cpp: In function ‘void getPrev(int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:36:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:36:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp: In function ‘long long int dfs(int, int, long long int)’:
+../main.cpp:42:6: error: ‘checkpoint’ was not declared in this scope
+  if (checkpoint[u]) return c;
+      ^~~~~~~~~~
+../main.cpp:44:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:59:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:64:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:64:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+../main.cpp: In function ‘int main()’:
+../main.cpp:74:3: error: ‘checkpoint’ was not declared in this scope
+   checkpoint[x]=1;
+   ^~~~~~~~~~
+../main.cpp:74:3: note: suggested alternative: ‘check’
+   checkpoint[x]=1;
+   ^~~~~~~~~~
+   check
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:49:45 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:36:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:36:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp: In function ‘long long int dfs(int, int, long long int)’:
+../main.cpp:44:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:59:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:64:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:64:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:49:46 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘void init()’:
+../main.cpp:36:3: error: ‘Nextval’ was not declared in this scope
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+../main.cpp:36:3: note: suggested alternative: ‘Next’
+   Nextval[u]=Prevval[v];
+   ^~~~~~~
+   Next
+../main.cpp: In function ‘long long int dfs(int, int, long long int)’:
+../main.cpp:44:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:59:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:64:8: error: ‘Nextval’ was not declared in this scope
+   now-=Nextval[u];
+        ^~~~~~~
+../main.cpp:64:8: note: suggested alternative: ‘Next’
+   now-=Nextval[u];
+        ^~~~~~~
+        Next
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:49:59 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int dfs(int, int, long long int)’:
+../main.cpp:44:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:7: warning: unused variable ‘ok’ [-Wunused-variable]
+   int ok=1;
+       ^~
+../main.cpp:59:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+09:50:05 **** Incremental Build of configuration Debug for project A ****
+make all 
+make: Nothing to be done for 'all'.
+09:58:35 **** Incremental Build of configuration Debug for project A ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void getPrev(long long int, long long int)’:
+../main.cpp:23:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int dfs(long long int, long long int, long long int)’:
+../main.cpp:44:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (long long i=0;i<e[u].size();++i){
+                     ~^~~~~~~~~~~~
+../main.cpp: In function ‘long long int check()’:
+../main.cpp:55:13: warning: unused variable ‘ok’ [-Wunused-variable]
+   long long ok=1;
+             ^~
+../main.cpp:59:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (long long i=0;i<e[u].size();++i){
+                      ~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: A
+Invoking: Cross G++ Linker
+g++  -o "A"  ./main.o   
+Finished building target: A
+ 
+10:18:46 **** Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:26:24 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:22:15: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+     dem[s[pos]]++;
+               ^
+../main.cpp:38:11: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+   dem[s[i]]++;
+           ^
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:26:30 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:26:45 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:40 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:21:15: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+     dem[s[pos]]++;
+               ^
+../main.cpp:37:11: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+   dem[s[i]]++;
+           ^
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:28:31 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:37:11: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+   dem[s[i]]++;
+           ^
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:28:36 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:45 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:29:24 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:30:12 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:30:20 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:30:38 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:36:03 **** Incremental Build of configuration Debug for project E ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: E
+Invoking: Cross G++ Linker
+g++  -o "E"  ./main.o   
+Finished building target: E
+ 
+10:36:59 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:05 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:15 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:24 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:50 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:37:58 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:25 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:31 **** Incremental Build of configuration Debug for project E ****
+make all 
+make: Nothing to be done for 'all'.
+10:43:34 **** Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:16:1: error: ‘vector’ does not name a type; did you mean ‘perror’?
+ vector<data> a;
+ ^~~~~~
+ perror
+../main.cpp: In function ‘bool cmp(data, data)’:
+../main.cpp:18:15: error: ‘v’ was not declared in this scope
+  return a.avl>v.avl;
+               ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:23:8: error: ‘a’ was not declared in this scope
+   cin>>a[i].d>>a[i].v;
+        ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:43:48 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘bool cmp(data, data)’:
+../main.cpp:20:15: error: ‘v’ was not declared in this scope
+  return a.avl>v.avl;
+               ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:43:56 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:45:30 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:23:10: warning: right operand of comma operator has no effect [-Wunused-value]
+  cin>>n,c;
+          ^
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:45:35 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+10:45:45 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:46:54 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘bool cmp(data, data)’:
+../main.cpp:20:25: warning: statement has no effect [-Wunused-value]
+  if (a.avl!=b.avl) a.avl>b.avl;
+                    ~~~~~^~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:47:06 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:47:18 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+10:51:06 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:47:19: error: no matching function for call to ‘max(long long int&, int&)’
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:219:5: note: candidate: template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)
+     max(const _Tp& __a, const _Tp& __b)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:219:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long long int’ and ‘int’)
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:265:5: note: candidate: template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)
+     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:265:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long long int’ and ‘int’)
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/algorithm:62:0,
+                 from ../main.cpp:10:
+/usr/include/c++/7/bits/stl_algo.h:3462:5: note: candidate: template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)
+     max(initializer_list<_Tp> __l)
+     ^~~
+/usr/include/c++/7/bits/stl_algo.h:3462:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long long int’
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/algorithm:62:0,
+                 from ../main.cpp:10:
+/usr/include/c++/7/bits/stl_algo.h:3468:5: note: candidate: template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)
+     max(initializer_list<_Tp> __l, _Compare __comp)
+     ^~~
+/usr/include/c++/7/bits/stl_algo.h:3468:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long long int’
+   res=max(res,maxx);
+                   ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:51:12 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:47:19: error: no matching function for call to ‘max(long long int&, int&)’
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:219:5: note: candidate: template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)
+     max(const _Tp& __a, const _Tp& __b)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:219:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long long int’ and ‘int’)
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:265:5: note: candidate: template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)
+     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:265:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   deduced conflicting types for parameter ‘const _Tp’ (‘long long int’ and ‘int’)
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/algorithm:62:0,
+                 from ../main.cpp:10:
+/usr/include/c++/7/bits/stl_algo.h:3462:5: note: candidate: template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)
+     max(initializer_list<_Tp> __l)
+     ^~~
+/usr/include/c++/7/bits/stl_algo.h:3462:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long long int’
+   res=max(res,maxx);
+                   ^
+In file included from /usr/include/c++/7/algorithm:62:0,
+                 from ../main.cpp:10:
+/usr/include/c++/7/bits/stl_algo.h:3468:5: note: candidate: template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)
+     max(initializer_list<_Tp> __l, _Compare __comp)
+     ^~~
+/usr/include/c++/7/bits/stl_algo.h:3468:5: note:   template argument deduction/substitution failed:
+../main.cpp:47:19: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘long long int’
+   res=max(res,maxx);
+                   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:51:37 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:51:40 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+10:51:49 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+10:51:54 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+10:51:59 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+10:52:01 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:06:01 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:06:17 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:06:21 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:06:26 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:07:35 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:07:55 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:09:18 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:22:05 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:18:6: error: redeclaration of ‘int k’
+  int k=0;
+      ^
+../main.cpp:11:8: note: ‘int k’ previously declared here
+  int n,k,res;
+        ^
+../main.cpp:21:11: error: cannot convert ‘data’ to ‘int’ in assignment
+    k=arr[i];
+           ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+00:22:13 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:21:11: error: cannot convert ‘data’ to ‘int’ in assignment
+    k=arr[i];
+           ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:22:16 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:21:11: error: cannot convert ‘data’ to ‘int’ in assignment
+    k=arr[i];
+           ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+00:22:22 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:22:26 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:22:37 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:22:40 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:22:45 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:23:24 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:23:53 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+00:23:55 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:24:01 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+00:24:08 **** Incremental Build of configuration Debug for project D ****
+make all 
+make: Nothing to be done for 'all'.
+22:49:09 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:22:3: error: ‘e’ was not declared in this scope
+   e[u].push_back({v,c});
+   ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:49:23 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+22:50:48 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+22:51:19 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+22:57:49 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:26:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:27:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:28:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:43:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:36:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘int main()’:
+../main.cpp:60:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+22:59:01 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:26:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:27:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:28:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:43:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:36:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘int main()’:
+../main.cpp:60:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+23:01:42 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:26:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:27:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:28:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:43:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:36:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘int main()’:
+../main.cpp:60:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+23:19:50 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:25:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:27:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:28:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:29:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:44:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:37:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘void kruskal()’:
+../main.cpp:64:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge.size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:86:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+23:26:40 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:25:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:27:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:28:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:29:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:44:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:37:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘void kruskal()’:
+../main.cpp:64:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge.size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:91:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+23:27:29 **** Incremental Build of configuration Debug for project D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void prim()’:
+../main.cpp:25:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[0].size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp:27:7: warning: unused variable ‘u’ [-Wunused-variable]
+   int u=edge[id].u;
+       ^
+../main.cpp:28:7: warning: unused variable ‘v’ [-Wunused-variable]
+   int v=edge[id].v;
+       ^
+../main.cpp:29:7: warning: unused variable ‘c’ [-Wunused-variable]
+   int c=edge[id].c;
+       ^
+../main.cpp:44:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../main.cpp:37:7: warning: unused variable ‘Xc’ [-Wunused-variable]
+   int Xc=X.c;
+       ^~
+../main.cpp: In function ‘void kruskal()’:
+../main.cpp:64:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<edge.size();++i){
+               ~^~~~~~~~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:91:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<res.size();++i)
+               ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: D
+Invoking: Cross G++ Linker
+g++  -o "D"  ./main.o   
+Finished building target: D
+ 
+18:55:00 **** Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:28:11: error: stray ‘\303’ in program
+  for (int í=1;i<=n;++i){
+           ^
+../main.cpp:28:12: error: stray ‘\255’ in program
+  for (int í=1;i<=n;++i){
+            ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:28:13: error: expected unqualified-id before ‘=’ token
+  for (int í=1;i<=n;++i){
+             ^
+../main.cpp:28:13: error: expected ‘;’ before ‘=’ token
+../main.cpp:28:13: error: expected primary-expression before ‘=’ token
+../main.cpp:28:16: error: ‘i’ was not declared in this scope
+  for (int í=1;i<=n;++i){
+                ^
+../main.cpp:28:20: error: expected ‘)’ before ‘;’ token
+  for (int í=1;i<=n;++i){
+                    ^
+../main.cpp:28:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  for (int í=1;i<=n;++i){
+  ^~~
+../main.cpp:28:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  for (int í=1;i<=n;++i){
+                     ^~
+../main.cpp:28:23: error: ‘i’ was not declared in this scope
+  for (int í=1;i<=n;++i){
+                       ^
+../main.cpp:34:12: error: ‘finde’ was not declared in this scope
+   int endd=finde(1,i,i);
+            ^~~~~
+../main.cpp:34:12: note: suggested alternative: ‘findb’
+   int endd=finde(1,i,i);
+            ^~~~~
+            findb
+../main.cpp:33:7: warning: unused variable ‘beg’ [-Wunused-variable]
+   int beg=findb(1,i,i);
+       ^~~
+../main.cpp:34:7: warning: unused variable ‘endd’ [-Wunused-variable]
+   int endd=finde(1,i,i);
+       ^~~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:56:16 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:41:11: error: stray ‘\303’ in program
+  for (int í=1;i<=n;++i){
+           ^
+../main.cpp:41:12: error: stray ‘\255’ in program
+  for (int í=1;i<=n;++i){
+            ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:41:13: error: expected unqualified-id before ‘=’ token
+  for (int í=1;i<=n;++i){
+             ^
+../main.cpp:41:13: error: expected ‘;’ before ‘=’ token
+../main.cpp:41:13: error: expected primary-expression before ‘=’ token
+../main.cpp:41:16: error: ‘i’ was not declared in this scope
+  for (int í=1;i<=n;++i){
+                ^
+../main.cpp:41:20: error: expected ‘)’ before ‘;’ token
+  for (int í=1;i<=n;++i){
+                    ^
+../main.cpp:41:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  for (int í=1;i<=n;++i){
+  ^~~
+../main.cpp:41:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  for (int í=1;i<=n;++i){
+                     ^~
+../main.cpp:41:23: error: ‘i’ was not declared in this scope
+  for (int í=1;i<=n;++i){
+                       ^
+../main.cpp:46:7: warning: unused variable ‘beg’ [-Wunused-variable]
+   int beg=findb(1,i,i);
+       ^~~
+../main.cpp:47:7: warning: unused variable ‘endd’ [-Wunused-variable]
+   int endd=finde(1,i,i);
+       ^~~~
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:56:24 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:46:7: warning: unused variable ‘beg’ [-Wunused-variable]
+   int beg=findb(1,i,i);
+       ^~~
+../main.cpp:47:7: warning: unused variable ‘endd’ [-Wunused-variable]
+   int endd=finde(1,i,i);
+       ^~~~
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+18:59:07 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+18:59:28 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+18:59:49 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:02:17 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:02:29 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:03:36 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:03:42 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:04:37 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:54:9: warning: statement has no effect [-Wunused-value]
+   res[i]-sumres[beg];
+   ~~~~~~^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:06:17 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:06:37 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:06:54 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:07:46 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:08:01 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:11:20 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:12:04 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:12:23 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:14:12 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:14:26 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:16:03 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:17:10 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:20:17 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:21:27 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:21:36 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:22:30 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:11 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:23:22 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:37 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:23:43 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:03 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:23 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:24:35 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:27:36 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:28:28 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:29:25 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:54:7: error: ‘b’ was not declared in this scope
+   if (b>=2)res[i]=(res[i]+1000000007-sumres[beg-2])%1000000007;
+       ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:29:45 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:29:46 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:19 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:33:09 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:33:13 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:33:15 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:11 **** Incremental Build of configuration Debug for project B ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: B
+Invoking: Cross G++ Linker
+g++  -o "B"  ./main.o   
+Finished building target: B
+ 
+19:37:41 **** Incremental Build of configuration Debug for project B ****
+make all 
+make: Nothing to be done for 'all'.
+19:43:18 **** Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+19:52:11 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:24:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:24:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:23:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  for (int i=1;i<=50;++i)
+  ^~~
+../main.cpp:25:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   if (posA!=ST[id*2].size())
+   ^~
+../main.cpp:25:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:30:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:31:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+19:55:27 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:25:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:25:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:27:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:31:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:52:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:52:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:54:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:58:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘long long int getres(int, int, int, int, int)’:
+../main.cpp:67:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:38:58 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:79:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+../main.cpp:95:16: error: ‘m’ was not declared in this scope
+  getres(id*2,l,m,x,y);
+                ^
+../main.cpp:94:6: warning: unused variable ‘mid’ [-Wunused-variable]
+  int mid=(l+r)>>1;
+      ^~~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:39:07 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:79:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:41:17 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:79:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:41:21 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:41 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:42:46 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:45 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:79:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:44:08 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:48:04 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:75:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0;i<res.size();++i){
+                  ~^~~~~~~~~~~
+../main.cpp:94:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:48:08 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:24 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:74:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0;i<res.size();++i){
+                  ~^~~~~~~~~~~
+../main.cpp:78:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=i;j<res.size();++j)
+                    ~^~~~~~~~~~~
+../main.cpp:90:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 
+20:51:51 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:09 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:33 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:45 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:54:13 **** Incremental Build of configuration Debug for project C ****
+make all 
+make: Nothing to be done for 'all'.
+20:55:07 **** Incremental Build of configuration Debug for project C ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void build(int, int, int)’:
+../main.cpp:26:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:26:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:27:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:28:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:32:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:33:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void update(int, int, int, int)’:
+../main.cpp:53:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA==ST[id*2].size()&&posB==ST[id*2+1].size()) break;
+                              ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:54:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posA!=ST[id*2].size())
+       ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp:55:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posB==ST[id*2+1].size()||ST[id*2][posA]<ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:59:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (posB!=ST[id*2+1].size())
+       ~~~~^~~~~~~~~~~~~~~~~~~
+../main.cpp:60:10: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(posA==ST[id*2].size()||ST[id*2][posA]>=ST[id*2+1][posB]) {
+      ~~~~^~~~~~~~~~~~~~~~~
+../main.cpp: In function ‘void getres(int, int, int, int, int)’:
+../main.cpp:70:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<ST[id].size();++i){
+                ~^~~~~~~~~~~~~~
+../main.cpp:71:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (res.size()<k) {
+        ~~~~~~~~~~^~
+../main.cpp:75:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0;i<res.size();++i){
+                  ~^~~~~~~~~~~
+../main.cpp:79:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=i;j<res.size();++j)
+                    ~^~~~~~~~~~~
+../main.cpp:93:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i=0;i<res.size();++i){
+                 ~^~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: C
+Invoking: Cross G++ Linker
+g++  -o "C"  ./main.o   
+Finished building target: C
+ 

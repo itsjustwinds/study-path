@@ -1,0 +1,53 @@
+/*
+ * book_store.cpp
+ *
+ *  Created on: Mar 14, 2019
+ *      Author: huy
+ */
+
+#include"book_store.h"
+
+
+void book_store::delete_all(book *&item){
+	if (item==nullptr) return;
+	delete_all(item->Next);
+	delete item;
+}
+
+void book_store::init(){
+	item=nullptr;
+}
+
+void book_store::input(book *New){
+	book *cur=item;
+	while(cur!=nullptr){
+		if (compare(cur,New)){
+			cur->stock_level++;
+			return;
+		}
+		if (cur->Next==nullptr){
+			cur->Next=New;
+		}
+	}
+}
+
+void book_store::sell(book *New){
+	book *cur=item;
+	while(cur!=nullptr){
+		if (compare(cur,New)){
+			cur->stock_level++;
+			return;
+		}
+	}
+	cout<<"OUT OF STOCK\n";
+}
+
+void book_store::find(char s[]){
+	book *cur=item;
+	while(cur!=nullptr){
+		if (right(s,cur->title)){
+			cout<<"BOOK: "<<cur->title<<"\n";
+			cout<<cur->ISBN<<"\n";
+		}
+	}
+}

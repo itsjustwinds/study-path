@@ -1,0 +1,112 @@
+/*
+ * BST.cpp
+ *
+ *  Created on: May 22, 2019
+ *      Author: huy
+ */
+
+#include"BST.h"
+
+void BST::delete_tree(Node *&root){
+	if (root==nullptr) return;
+	delete_tree(root->Left);
+	delete_tree(root->Right);
+	delete root;
+	root=nullptr;
+}
+
+void BST::add(Node* &root,int x,int stage){
+	if (root==nullptr){
+		root=new Node;
+		root->val=x;
+		root->Left=nullptr;
+		root->Right=nullptr;
+		root->stage=stage;
+		return;
+	}
+
+	if (x==root->val) return;
+	if (x<root->val) add(root->Left,x,stage+1);
+	if (x>root->val) add(root->Right,x,stage+1);
+}
+
+BST::BST(int* &a,int n){
+	root=new Node;
+	root->val=a[0];
+	root->stage=1;
+	root->Left=nullptr;
+	root->Right=nullptr;
+	for (int i=1;i<n;++i){
+		add(root,a[i],1);
+	}
+}
+
+void BST::print_pre_order(Node* root){
+	if (root==nullptr) return;
+	printf("%d ",root->val);
+	print_pre_order(root->Left);
+	print_pre_order(root->Right);
+}
+
+void BST::print_asc_order(Node* root){
+	if (root==nullptr) return;
+	print_asc_order(root->Left);
+	printf("%d ",root->val);
+	print_asc_order(root->Right);
+}
+
+void BST::print_dec_order(Node* root){
+	if (root==nullptr) return;
+	print_dec_order(root->Right);
+	printf("%d ",root->val);
+	print_dec_order(root->Left);
+}
+
+void BST::print_post_order(Node* root){
+	if (root==nullptr) return;
+	print_post_order(root->Left);
+	print_post_order(root->Right);
+	printf("%d ",root->val);
+}
+
+void BST::get_height(Node* root,int &res){
+	if(root==nullptr) return;
+	res=max(res,root->stage);
+	get_height(root->Left,res);
+	get_height(root->Right,res);
+}
+
+Node* BST::min_value(Node* root){
+	if (root==nullptr) return root;
+	Node* res=root;
+	Node* Left=min_value(root->Left);
+	Node* Right=min_value(root->Right);
+	if (Left!=nullptr&&Left->val<res->val)
+		res=Left;
+	if (Right!=nullptr&&Right->val<res->val)
+		res=Right;
+	return res;
+}
+
+Node* BST::max_value(Node* root){
+	if (root==nullptr) return root;
+	Node* res=root;
+	Node* Left=max_value(root->Left);
+	Node* Right=max_value(root->Right);
+	if (Left!=nullptr&&Left->val>res->val)
+		res=Left;
+	if (Right!=nullptr&&Right->val>res->val)
+		res=Right;
+	return res;
+}
+
+void BST::successor(Node* root,int x, Node* &res){
+	if (root==nullptr) return;
+	successor(root->Left,x,res);
+	successor(root->Right,x,res);
+	if (res==nullptr) res=root;
+	else{
+		if (root->val>x&&root->val<res->val)
+			res=root;
+	}
+}

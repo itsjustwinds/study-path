@@ -1,0 +1,6 @@
+MAX_RECENT_WORKSPACES=10
+RECENT_WORKSPACES=/home/huy/Documents/HK3 2018-2019/CS163\n/home/huy/Documents/HK3 2018-2019/CS163/saigoncodetour\n/home/huy/Documents/HK3 2018-2019/CS163/W08/Ex02\n/home/huy/Documents/HK3 2018-2019/CS163/W08\n/home/huy/Documents/HK3 2018-2019/CS163/W07\n/home/huy/Documents/HK3 2018-2019/CS163/W07/Ex02\n/home/huy/Documents/HK3 2018-2019/CS163/W01\n/home/huy/Documents/HK3 2018-2019/CS163/W05\n/home/huy/Documents/HK3 2018-2019/CS163/W04\n/home/huy/Documents/HK3 2018-2019/CS163/27-05-19
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_RECENT_WORKSPACES=false
+SHOW_WORKSPACE_SELECTION_DIALOG=true
+eclipse.preferences.version=1

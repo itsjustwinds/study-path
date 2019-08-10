@@ -1,0 +1,28 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 28, 2019
+ *      Author: huy
+ */
+
+#include"function.h"
+
+int res_fibo(int n){
+	int *f=new int[n+1];
+	for (int i=1;i<=n;++i)
+		f[i]=0;
+	int res=fibo(n,f);
+	delete[] f;
+	return res;
+}
+int fibo(int n,int *&f){
+	if (f[n]!=0) return f[n];
+	if (n==0||n==1) {
+		f[n]=1;
+		return f[n];
+	}
+	f[n]=fibo(n-1,f)+fibo(n-2,f);
+	return f[n];
+}
+
+//////////////////////////

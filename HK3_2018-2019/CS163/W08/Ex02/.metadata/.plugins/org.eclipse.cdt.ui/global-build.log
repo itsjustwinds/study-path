@@ -1,0 +1,762 @@
+13:56:08 **** Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+Finished building: ../18125130_Ex02_1.cpp
+ 
+Building target: Ex02_1
+Invoking: Cross G++ Linker
+g++  -o "Ex02_1"  ./18125130_Ex02_1.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'Ex02_1' failed
+collect2: error: ld returned 1 exit status
+make: *** [Ex02_1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:56:13 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+Finished building: ../18125130_Ex02_1.cpp
+ 
+Building target: Ex02_1
+Invoking: Cross G++ Linker
+g++  -o "Ex02_1"  ./18125130_Ex02_1.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'Ex02_1' failed
+collect2: error: ld returned 1 exit status
+make: *** [Ex02_1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:03:22 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+../18125130_Ex02_1.cpp: In function ‘bool cmp(edge, edge)’:
+../18125130_Ex02_1.cpp:16:10: error: no match for ‘operator<’ (operand types are ‘edge’ and ‘edge’)
+  return a<b;
+         ~^~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/stl_pair.h:454:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::pair<_T1, _T2>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:308:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:308:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:346:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:346:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:1145:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1145:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:1151:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1151:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6094:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6094:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6107:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6107:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6119:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6119:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   mismatched types ‘const _CharT*’ and ‘edge’
+  return a<b;
+           ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_1.cpp:8:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘edge’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘edge’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../18125130_Ex02_1.cpp:10:
+/usr/include/c++/7/bits/stl_vector.h:1618:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1618:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_1.cpp:16:11: note:   ‘edge’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  return a<b;
+           ^
+../18125130_Ex02_1.cpp: In function ‘int main()’:
+../18125130_Ex02_1.cpp:29:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e.size();++i){
+               ~^~~~~~~~~
+../18125130_Ex02_1.cpp:21:7: warning: unused variable ‘root’ [-Wunused-variable]
+  int *root;
+       ^~~~
+make: *** [18125130_Ex02_1.o] Error 1
+subdir.mk:18: recipe for target '18125130_Ex02_1.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+14:03:30 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+../18125130_Ex02_1.cpp: In function ‘int main()’:
+../18125130_Ex02_1.cpp:29:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e.size();++i){
+               ~^~~~~~~~~
+../18125130_Ex02_1.cpp:21:7: warning: unused variable ‘root’ [-Wunused-variable]
+  int *root;
+       ^~~~
+Finished building: ../18125130_Ex02_1.cpp
+ 
+Building target: Ex02_1
+Invoking: Cross G++ Linker
+g++  -o "Ex02_1"  ./18125130_Ex02_1.o   
+Finished building target: Ex02_1
+ 
+14:03:40 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:03:41 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:03:45 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:43 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+../18125130_Ex02_1.cpp: In function ‘int main()’:
+../18125130_Ex02_1.cpp:39:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e.size();++i){
+               ~^~~~~~~~~
+Finished building: ../18125130_Ex02_1.cpp
+ 
+Building target: Ex02_1
+Invoking: Cross G++ Linker
+g++  -o "Ex02_1"  ./18125130_Ex02_1.o   
+Finished building target: Ex02_1
+ 
+14:07:46 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:52 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:09:25 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+Building file: ../18125130_Ex02_1.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_1.d" -MT"18125130_Ex02_1.o" -o "18125130_Ex02_1.o" "../18125130_Ex02_1.cpp"
+../18125130_Ex02_1.cpp: In function ‘int main()’:
+../18125130_Ex02_1.cpp:39:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e.size();++i){
+               ~^~~~~~~~~
+Finished building: ../18125130_Ex02_1.cpp
+ 
+Building target: Ex02_1
+Invoking: Cross G++ Linker
+g++  -o "Ex02_1"  ./18125130_Ex02_1.o   
+Finished building target: Ex02_1
+ 
+14:09:36 **** Incremental Build of configuration Debug for project Ex02_1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:19:26 **** Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘int main()’:
+../18125130_Ex02_3.cpp:12:6: warning: unused variable ‘n’ [-Wunused-variable]
+  int n;
+      ^
+../18125130_Ex02_3.cpp:13:15: warning: unused variable ‘e’ [-Wunused-variable]
+  vector<int> *e;
+               ^
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:28:34 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘int main()’:
+../18125130_Ex02_3.cpp:32:6: warning: ‘p’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   e[p].push_back(i);
+      ^
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:32:22 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:32:29 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:32:41 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:33:03 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:33:36 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:34:26 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:34:56 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:35:12 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:35:29 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:47 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:38:31 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:38:44 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:16:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:22:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:38:48 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:55 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:31 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:44:46 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:15:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp:13:7: warning: unused variable ‘p’ [-Wunused-variable]
+   int p=par[u];
+       ^
+../18125130_Ex02_3.cpp:23:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:29:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:44:51 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:45:45 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:15:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:30:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:49:12 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, long long int*&, long long int*&, int*&)’:
+../18125130_Ex02_3.cpp:15:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp:18:22: error: no matching function for call to ‘min(int&, long long int&)’
+    minn=min(minn,s[v]);
+                      ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_3.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:195:5: note: candidate: template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)
+     min(const _Tp& __a, const _Tp& __b)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:195:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_3.cpp:18:22: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long long int’)
+    minn=min(minn,s[v]);
+                      ^
+In file included from /usr/include/c++/7/bits/char_traits.h:39:0,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../18125130_Ex02_3.cpp:8:
+/usr/include/c++/7/bits/stl_algobase.h:243:5: note: candidate: template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)
+     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+     ^~~
+/usr/include/c++/7/bits/stl_algobase.h:243:5: note:   template argument deduction/substitution failed:
+../18125130_Ex02_3.cpp:18:22: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long long int’)
+    minn=min(minn,s[v]);
+                      ^
+../18125130_Ex02_3.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, long long int*&, long long int*&, int*&)’:
+../18125130_Ex02_3.cpp:30:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘int main()’:
+../18125130_Ex02_3.cpp:42:15: error: cannot convert ‘int*’ to ‘long long int*’ in assignment
+  s=new int[n+1];
+               ^
+../18125130_Ex02_3.cpp:43:15: error: cannot convert ‘int*’ to ‘long long int*’ in assignment
+  a=new int[n+1];
+               ^
+subdir.mk:18: recipe for target '18125130_Ex02_3.o' failed
+make: *** [18125130_Ex02_3.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:49:33 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:15:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:30:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:49:40 **** Incremental Build of configuration Debug for project Ex02_3 ****
+make all 
+Building file: ../18125130_Ex02_3.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_3.d" -MT"18125130_Ex02_3.o" -o "18125130_Ex02_3.o" "../18125130_Ex02_3.cpp"
+../18125130_Ex02_3.cpp: In function ‘void dfs1(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:15:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<e[u].size();++i){
+                ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp:24:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+../18125130_Ex02_3.cpp: In function ‘void dfs2(int, int, std::vector<int>*&, int*&, int*&, int*&)’:
+../18125130_Ex02_3.cpp:30:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i=0;i<e[u].size();++i){
+               ~^~~~~~~~~~~~
+Finished building: ../18125130_Ex02_3.cpp
+ 
+Building target: Ex02_3
+Invoking: Cross G++ Linker
+g++  -o "Ex02_3"  ./18125130_Ex02_3.o   
+Finished building target: Ex02_3
+ 
+14:55:55 **** Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:15:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+Finished building: ../18125130_Ex02_2.cpp
+ 
+Building target: Ex02_2
+Invoking: Cross G++ Linker
+g++  -o "Ex02_2"  ./18125130_Ex02_2.o   
+Finished building target: Ex02_2
+ 
+15:00:48 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&)’:
+../18125130_Ex02_2.cpp:14:2: error: ‘vector’ was not declared in this scope
+  vector<int > arr;
+  ^~~~~~
+../18125130_Ex02_2.cpp:14:2: note: suggested alternative:
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../18125130_Ex02_2.cpp:9:
+/usr/include/c++/7/bits/stl_vector.h:216:11: note:   ‘std::vector’
+     class vector : protected _Vector_base<_Tp, _Alloc>
+           ^~~~~~
+../18125130_Ex02_2.cpp:14:9: error: expected primary-expression before ‘int’
+  vector<int > arr;
+         ^~~
+../18125130_Ex02_2.cpp:15:2: error: ‘arr’ was not declared in this scope
+  arr.clear();
+  ^~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:27:16: error: cannot convert ‘int**’ to ‘int*’ in assignment
+  d=new int*[n+1];
+                ^
+../18125130_Ex02_2.cpp:24:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+subdir.mk:18: recipe for target '18125130_Ex02_2.o' failed
+make: *** [18125130_Ex02_2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:01:02 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&)’:
+../18125130_Ex02_2.cpp:14:2: error: ‘vector’ was not declared in this scope
+  vector<int > arr;
+  ^~~~~~
+../18125130_Ex02_2.cpp:14:2: note: suggested alternative:
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../18125130_Ex02_2.cpp:9:
+/usr/include/c++/7/bits/stl_vector.h:216:11: note:   ‘std::vector’
+     class vector : protected _Vector_base<_Tp, _Alloc>
+           ^~~~~~
+../18125130_Ex02_2.cpp:14:9: error: expected primary-expression before ‘int’
+  vector<int > arr;
+         ^~~
+../18125130_Ex02_2.cpp:15:2: error: ‘arr’ was not declared in this scope
+  arr.clear();
+  ^~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:24:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+make: *** [18125130_Ex02_2.o] Error 1
+subdir.mk:18: recipe for target '18125130_Ex02_2.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:01:31 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp:10:50: error: ‘vector’ has not been declared
+ void dijkstra(int s,int t,int n,int **&a,int *&d,vector<int > &arr){
+                                                  ^~~~~~
+../18125130_Ex02_2.cpp:10:56: error: expected ‘,’ or ‘...’ before ‘<’ token
+ void dijkstra(int s,int t,int n,int **&a,int *&d,vector<int > &arr){
+                                                        ^
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&, int)’:
+../18125130_Ex02_2.cpp:14:2: error: ‘arr’ was not declared in this scope
+  arr.clear();
+  ^~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:32:20: error: too few arguments to function ‘void dijkstra(int, int, int, int**&, int*&, int)’
+  dijkstra(s,t,n,a,d);
+                    ^
+../18125130_Ex02_2.cpp:10:6: note: declared here
+ void dijkstra(int s,int t,int n,int **&a,int *&d,vector<int > &arr){
+      ^~~~~~~~
+../18125130_Ex02_2.cpp:23:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+make: *** [18125130_Ex02_2.o] Error 1
+subdir.mk:18: recipe for target '18125130_Ex02_2.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:02:14 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:24:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+Finished building: ../18125130_Ex02_2.cpp
+ 
+Building target: Ex02_2
+Invoking: Cross G++ Linker
+g++  -o "Ex02_2"  ./18125130_Ex02_2.o   
+Finished building target: Ex02_2
+ 
+15:10:52 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&)’:
+../18125130_Ex02_2.cpp:20:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<arr.size();++i)
+                ~^~~~~~~~~~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:39:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+Finished building: ../18125130_Ex02_2.cpp
+ 
+Building target: Ex02_2
+Invoking: Cross G++ Linker
+g++  -o "Ex02_2"  ./18125130_Ex02_2.o   
+Finished building target: Ex02_2
+ 
+15:13:34 **** Incremental Build of configuration Debug for project Ex02_2 ****
+make all 
+Building file: ../18125130_Ex02_2.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"18125130_Ex02_2.d" -MT"18125130_Ex02_2.o" -o "18125130_Ex02_2.o" "../18125130_Ex02_2.cpp"
+../18125130_Ex02_2.cpp: In function ‘void dijkstra(int, int, int, int**&, int*&)’:
+../18125130_Ex02_2.cpp:20:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0;i<arr.size();++i)
+                ~^~~~~~~~~~~
+../18125130_Ex02_2.cpp: In function ‘int main()’:
+../18125130_Ex02_2.cpp:39:6: warning: unused variable ‘res’ [-Wunused-variable]
+  int res=0;
+      ^~~
+Finished building: ../18125130_Ex02_2.cpp
+ 
+Building target: Ex02_2
+Invoking: Cross G++ Linker
+g++  -o "Ex02_2"  ./18125130_Ex02_2.o   
+Finished building target: Ex02_2
+ 

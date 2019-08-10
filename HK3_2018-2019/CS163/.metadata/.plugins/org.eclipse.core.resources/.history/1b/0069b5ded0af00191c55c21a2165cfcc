@@ -1,0 +1,32 @@
+/*
+ * system.h
+ *
+ *  Created on: Jul 27, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef SYSTEM_H_
+#define SYSTEM_H_
+#include<iostream>
+#include<string>
+#include<vector>
+#include<map>
+#include"trie.h"
+using namespace std;
+class system{
+private:
+	trie* root;
+	map<string,int> stopwords;
+
+public:
+	system(){
+		root=new trie();
+		stopwords.clear();
+	}
+
+
+};
+
+
+
+#endif /* SYSTEM_H_ */

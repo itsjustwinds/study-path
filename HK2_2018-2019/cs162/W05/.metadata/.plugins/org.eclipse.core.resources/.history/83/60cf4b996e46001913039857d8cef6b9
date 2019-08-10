@@ -1,0 +1,23 @@
+/*
+ * book_store.h
+ *
+ *  Created on: Mar 14, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef BOOK_STORE_H_
+#define BOOK_STORE_H_
+#include"book.h"
+struct book_store{
+	book *item;
+	void init();
+	void input(book New);
+	void sell(book New);
+	void find(char s[]);
+	void remove_less_than_k(int k);
+	void delete_all(book *&item);
+};
+
+
+
+#endif /* BOOK_STORE_H_ */

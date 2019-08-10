@@ -1,0 +1,104 @@
+/*
+ * function.cpp
+ *
+ *  Created on: Mar 21, 2019
+ *      Author: huy
+ */
+#include"function.h"
+
+void input(ifstream &fin,Node *&root){
+	int x;
+	fin>>x;
+	root=nullptr;
+	if (x==0) return;
+	root=new Node;
+	root->Prev=nullptr;
+	root->Next=nullptr;
+	root->val=x;
+	fin>>x;
+	Node *cur=root;
+	while(x){
+		Node *tmp=new Node;
+		tmp->Prev=cur;
+		tmp->Next=nullptr;
+		cur->Next=tmp;
+		cur=tmp;
+
+		fin>>x;
+	}
+}
+
+void output(ofstream &fout,Node *&root){
+	if (root==nullptr) {
+		fout<<0;
+		return;
+	}
+	fout<<root->val;
+	output(fout,root->Next);
+}
+
+void delete_all(Node *&root){
+	if (root==nullptr) return;
+	delete_all(root->Next);
+	delete root;
+}
+
+void insert(Node *&root,int X){
+	int num=0;
+	Node *cur=root;
+	while(cur!=nullptr){
+		++num;
+		cur=cur->Next;
+	}
+	if (num<=1){
+		Node *tmp=new Node;
+		tmp->Prev=nullptr;
+		tmp->Next=root;
+		root->Prev=tmp;
+		root=tmp;
+		return;
+	}
+	int dem=0;
+	cur=root;
+	while(1){
+		++dem;
+		if (dem==num/2){
+			Node *tmp=new Node;
+			tmp->val=X;
+			tmp->Prev=cur;
+			tmp->Next=cur->Next;
+			cur->Next->Prev=tmp;
+			cur->Next=tmp;
+			return;
+		}
+		cur=cur->Next;
+	}
+}
+
+void remove_all(Node *&root,int X){
+	while(root!=nullptr&&root->val==X){
+		Node *tmp=root->Next;
+		delete root;
+		root=tmp;
+	}
+	if (root==nullptr) return;
+	Node *cur=root->Next;
+	while(cur!=nullptr){
+		if (cur->val==X){
+			if (cur->Prev!=nullptr)cur->Prev->Next=cur->Next;
+			if (cur->Next!=nullptr)cur->Next->Prev=cur->Prev;
+			Node *tmp=cur->Next;
+			delete cur;
+			cur=tmp;
+		}
+		else cur=cur->Next;
+	}
+}
+
+void remove_dups(Node *&root){
+	Node *cur=root;
+	while(cur!=nullptr){
+		remove_all(cur->Next,cur->val);
+		cur=cur->Next;
+	}
+}

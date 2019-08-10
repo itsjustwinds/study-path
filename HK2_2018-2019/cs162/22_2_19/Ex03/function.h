@@ -1,0 +1,15 @@
+/*
+ * function.h
+ *
+ *  Created on: Feb 28, 2019
+ *      Author: huy
+ */
+#pragma once
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
+#include<iostream>
+using namespace std;
+void input(int &n,int *&a);
+int greatest_frequency(int &n,int *&a);
+
+#endif /* FUNCTION_H_ */
